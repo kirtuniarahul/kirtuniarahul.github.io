@@ -10,11 +10,12 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
 
 
       <p class="eyebrow">ENGINEERING PORTFOLIO</p>
-      <h1>Kirtunia Rahul, <span>Ph.D.</span></h1>
+      <h1 style="margin-bottom: 30px;">
+        Kirtunia Rahul, Ph.D.</span></h1>
 
       <div class="status-pill">
         <span class="status-dot"></span>
-        Composite Structures · FEA · Advanced Manufacturing
+        Composite Structures · FEA · Nondestructive Testing
       </div>
 
       <p class="hero-lead">
@@ -29,16 +30,20 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
 
       <div class="hero-metrics">
         <div>
-          <strong>FEA</strong>
-          <span>ABAQUS · ANSYS · SolidWorks</span>
-        </div>
-        <div>
           <strong>Composites</strong>
-          <span>Fiberglass · CFRP · Failure Analysis</span>
+          <span>Fiberglass · CFRP </span>
         </div>
         <div>
-          <strong>Manufacturing</strong>
-          <span>Optimization · DFM · Process Development</span>
+          <strong>DESIGN & FEA</strong>
+          <span>ABAQUS · SolidWorks</span>
+        </div>
+        <div>
+          <strong>STRUCTURAL ANALYSIS</strong>
+          <span>STRESS ANALYSIS · FAILURE ANALYSIS</span>
+        </div>
+        <div>
+          <strong>NONDESTRUCTIVE TESTING</strong>
+          <span>ULTRASOUND · X-RAY CT · DIC</span>
         </div>
       </div>
     </div>
@@ -76,7 +81,7 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
       <a class="home-page-card research-card" href="{{ '/research/' | relative_url }}">
         <span class="page-number">02</span>
         <h3>Research Projects</h3>
-        <p>Composite mechanics, FEA, NDT, optimization, and advanced manufacturing projects.</p>
+        <p>Composite mechanics, FEA, NDT, strengtha and failure analysis projects.</p>
         <span class="page-arrow">Open page →</span>
       </a>
 
@@ -90,7 +95,7 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
       <a class="home-page-card publications-card" href="{{ '/publications/' | relative_url }}">
         <span class="page-number">04</span>
         <h3>Publications</h3>
-        <p>Dissertation, thesis, journal manuscripts, conference work, and presentations.</p>
+        <p>Dissertation, thesis, journal manuscripts, conference work, posters and presentations.</p>
         <span class="page-arrow">Open page →</span>
       </a>
     </div>
