@@ -1,0 +1,21 @@
+title: "Kirtunia Rahul"
+description: "Composite Structural Engineer | FEA | Advanced Manufacturing"
+url: "https://kirtuniarahul.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+author:
+  name: "Kirtunia Rahul"
+  email: "kirtunia_rahul1@alumni.baylor.edu"
+
+social:
+  github: "https://github.com/kirtuniarahul"
+  linkedin: "https://www.linkedin.com/in/kirtunia-rahul"
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
