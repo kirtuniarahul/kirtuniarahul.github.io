@@ -807,3 +807,197 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
     padding:7px 8px;
   }
 }
+/* =========================================
+   FEA CONTOUR GLOW
+   ========================================= */
+
+.fea-glow {
+  position: absolute;
+  width: 470px;
+  height: 470px;
+  border-radius: 50%;
+  z-index: 0;
+
+  background:
+    radial-gradient(
+      circle at 38% 35%,
+      rgba(255, 60, 60, 0.45) 0%,
+      rgba(255, 145, 40, 0.30) 15%,
+      rgba(255, 220, 70, 0.18) 28%,
+      rgba(40, 215, 255, 0.16) 46%,
+      rgba(65, 135, 255, 0.18) 62%,
+      rgba(141, 92, 255, 0.12) 75%,
+      transparent 88%
+    );
+
+  filter: blur(18px);
+
+  animation: feaPulse 5s ease-in-out infinite alternate;
+}
+
+@keyframes feaPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.55;
+  }
+
+  100% {
+    transform: scale(1.08);
+    opacity: 0.9;
+  }
+}
+
+
+/* =========================================
+   NODE NETWORK
+   ========================================= */
+
+.node-network {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+/* Individual nodes */
+
+.node {
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #28d7ff;
+
+  box-shadow:
+    0 0 8px #28d7ff,
+    0 0 18px rgba(40, 215, 255, 0.8);
+
+  animation: nodePulse 2.6s ease-in-out infinite alternate;
+}
+
+
+@keyframes nodePulse {
+  from {
+    transform: scale(0.8);
+    opacity: 0.65;
+  }
+
+  to {
+    transform: scale(1.35);
+    opacity: 1;
+  }
+}
+
+
+/* Node positions */
+
+.n1 {
+  top: 8%;
+  left: 25%;
+}
+
+.n2 {
+  top: 18%;
+  right: 10%;
+}
+
+.n3 {
+  top: 48%;
+  right: 2%;
+}
+
+.n4 {
+  bottom: 10%;
+  right: 22%;
+}
+
+.n5 {
+  bottom: 6%;
+  left: 20%;
+}
+
+.n6 {
+  top: 42%;
+  left: 2%;
+}
+
+
+/* =========================================
+   CONNECTING LINES
+   ========================================= */
+
+.connector {
+  position: absolute;
+
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(40, 215, 255, 0.05),
+    rgba(40, 215, 255, 0.65),
+    rgba(141, 92, 255, 0.35)
+  );
+
+  transform-origin: left center;
+
+  box-shadow:
+    0 0 5px rgba(40, 215, 255, 0.35);
+
+  opacity: 0.75;
+
+  animation: lineGlow 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes lineGlow {
+  from {
+    opacity: 0.25;
+  }
+
+  to {
+    opacity: 0.9;
+  }
+}
+
+
+/* Connector positions */
+
+.c1 {
+  width: 230px;
+  top: 11%;
+  left: 26%;
+  transform: rotate(18deg);
+}
+
+.c2 {
+  width: 180px;
+  top: 21%;
+  right: 8%;
+  transform: rotate(72deg);
+}
+
+.c3 {
+  width: 220px;
+  top: 50%;
+  right: 0%;
+  transform: rotate(112deg);
+}
+
+.c4 {
+  width: 210px;
+  bottom: 12%;
+  right: 20%;
+  transform: rotate(165deg);
+}
+
+.c5 {
+  width: 230px;
+  bottom: 12%;
+  left: 18%;
+  transform: rotate(220deg);
+}
