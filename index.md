@@ -49,15 +49,33 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
     </div>
 
     <div class="hero-visual">
-      <div class="orbit orbit-one"></div>
-      <div class="orbit orbit-two"></div>
+    
+      <div class="fea-glow"></div>
+    
+      <div class="node-network">
+        <span class="node n1"></span>
+        <span class="node n2"></span>
+        <span class="node n3"></span>
+        <span class="node n4"></span>
+        <span class="node n5"></span>
+        <span class="node n6"></span>
+    
+        <span class="connector c1"></span>
+        <span class="connector c2"></span>
+        <span class="connector c3"></span>
+        <span class="connector c4"></span>
+        <span class="connector c5"></span>
+      </div>
+    
       <div class="photo-frame">
         <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="Kirtunia Rahul">
       </div>
+    
       <div class="floating-chip chip-a">FEA</div>
       <div class="floating-chip chip-b">CFRP</div>
       <div class="floating-chip chip-c">NDT</div>
       <div class="floating-chip chip-d">CAD</div>
+    
     </div>
   </div>
 </section>
