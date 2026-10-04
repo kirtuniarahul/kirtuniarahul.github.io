@@ -3,6 +3,12 @@ layout: default
 title: Home
 description: "Engineering portfolio of Kirtunia Rahul, Ph.D. — composite structures, finite element analysis, and advanced manufacturing."
 ---
+<nav class="home-tabs">
+  <a href="#education">Education</a>
+  <a href="#research">Research Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#publications">Publications</a>
+</nav>
 
 <section class="hero section-dark">
   <div class="container hero-grid">
