@@ -19,9 +19,10 @@ description: "Education and academic background of Kirtunia Rahul."
       <article class="timeline-card">
         <div class="timeline-year">2025</div>
         <div class="timeline-content">
-          <span class="degree-badge">Ph.D.</span>
+          <span class="degree-badge">Doctor of Philosophy</span>
           <h3>Mechanical Engineering</h3>
-          <h4>Baylor University, Waco, Texas</h4>
+          <h4>Baylor University</h4>
+          <h5>Waco, Texas</h5>
           <p class="education-meta">
             January 2021 – May 2025
           </p>
@@ -45,9 +46,10 @@ description: "Education and academic background of Kirtunia Rahul."
       <article class="timeline-card">
         <div class="timeline-year">2023</div>
         <div class="timeline-content">
-          <span class="degree-badge alt">M.S.</span>
+          <span class="degree-badge alt">Masters</span>
           <h3>Mechanical Engineering</h3>
-          <h4>Baylor University, Waco, Texas</h4>
+          <h4>Baylor University</h4>
+          <h5>Waco, Texas</h5>
           <p class="education-meta">
             January 2021 – December 2023
           </p>
@@ -66,11 +68,12 @@ description: "Education and academic background of Kirtunia Rahul."
       </article>
 
       <article class="timeline-card">
-        <div class="timeline-year">B.Sc.</div>
+        <div class="timeline-year">2017</div>
         <div class="timeline-content">
-          <span class="degree-badge third">NAME</span>
+          <span class="degree-badge third">Bachelors</span>
           <h3>Naval Architecture & Marine Engineering</h3>
-          <h4>Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh</h4>
+          <h4>Bangladesh University of Engineering and Technology (BUET)</h4>
+          <h5>Dhaka, Bangladesh</h5>
           <p class="education-meta">
             February 2013 – September 2017
           </p>
