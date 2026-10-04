@@ -9,7 +9,7 @@ description: "Education and academic background of Kirtunia Rahul."
   <div class="shell">
     <p class="eyebrow">01 · ACADEMIC FOUNDATION</p>
     <h1>Education</h1>
-    <p>Mechanical engineering, composite materials, computational mechanics, and naval architecture.</p>
+    <p>Mechanical engineering, composite materials, and naval architecture.</p>
   </div>
 </section>
 
@@ -21,13 +21,20 @@ description: "Education and academic background of Kirtunia Rahul."
         <div class="timeline-content">
           <span class="degree-badge">Ph.D.</span>
           <h3>Mechanical Engineering</h3>
-          <h4>Baylor University</h4>
+          <h4>Baylor University, Waco, Texas</h4>
+          <p class="education-meta">
+            January 2021 – May 2025
+          </p>
+          <p class="education-meta">
+            CGPA: 3.95 / 4.00
+          </p>          
           <p>
             Dissertation focused on finite-element-based failure analysis of composite structures
             with nondestructive evaluation feature quantification.
           </p>
           <div class="tag-row">
             <span>Composite Failure</span>
+            <span>Experimental Validation</span>
             <span>FEA</span>
             <span>NDT</span>
             <span>Damage Mechanics</span>
@@ -40,15 +47,20 @@ description: "Education and academic background of Kirtunia Rahul."
         <div class="timeline-content">
           <span class="degree-badge alt">M.S.</span>
           <h3>Mechanical Engineering</h3>
-          <h4>Baylor University</h4>
+          <h4>Baylor University, Waco, Texas</h4>
+          <p class="education-meta">
+            January 2021 – December 2023
+          </p>
+          <p class="education-meta">
+            CGPA: 3.95 / 4.00
+          </p>          
           <p>
-            Thesis research on fiber-orientation quantification in large-area additive manufacturing
-            using microscopy and image analysis.
+            Statistical approach for failure analysis involving uncertainty in determining ply orientation.
           </p>
           <div class="tag-row">
-            <span>LAAM</span>
-            <span>Microscopy</span>
-            <span>Image Analysis</span>
+            <span>Statistical Analysis</span>
+            <span>Nondestructive Testing</span>
+            <span>Failure Analysis</span>
           </div>
         </div>
       </article>
@@ -58,15 +70,20 @@ description: "Education and academic background of Kirtunia Rahul."
         <div class="timeline-content">
           <span class="degree-badge third">NAME</span>
           <h3>Naval Architecture & Marine Engineering</h3>
-          <h4>Bangladesh University of Engineering and Technology (BUET)</h4>
+          <h4>Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh</h4>
+          <p class="education-meta">
+            February 2013 – September 2017
+          </p>
+          <p class="education-meta">
+            CGPA: 3.26 / 4.00
+          </p>          
           <p>
-            Engineering foundation in structural mechanics, design, materials, marine systems,
-            and applied analysis.
+            Analysis of pressure characteristics of a propeller blade.
           </p>
           <div class="tag-row">
-            <span>Structures</span>
-            <span>Marine Design</span>
-            <span>Mechanics</span>
+            <span>Ship Design and Structures</span>
+            <span>CAD</span>
+            <span>Fluid Mechanics</span>
           </div>
         </div>
       </article>
