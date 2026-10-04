@@ -41,8 +41,6 @@ description: "Research projects of Kirtunia Rahul in composite failure analysis,
         <p style="margin-top:20px;">
           <a class="hero-link primary"
              href="{{ '/research/failure-onset/' | relative_url }}"
-             target="_blank"
-             rel="noopener">
             View Research Project →
           </a>
         </p>
@@ -70,8 +68,6 @@ description: "Research projects of Kirtunia Rahul in composite failure analysis,
         <p style="margin-top:20px;">
           <a class="hero-link primary"
              href="{{ '/research/l-shaped-delamination/' | relative_url }}"
-             target="_blank"
-             rel="noopener">
             View Research Project →
           </a>
         </p>
@@ -98,8 +94,6 @@ description: "Research projects of Kirtunia Rahul in composite failure analysis,
         <p style="margin-top:20px;">
           <a class="hero-link primary"
              href="{{ '/research/ut-progressive-failure/' | relative_url }}"
-             target="_blank"
-             rel="noopener">
             View Research Project →
           </a>
         </p>
