@@ -75,3 +75,21 @@
     width: 220px;
   }
 }
+
+@import "{{ site.theme }}";
+
+body {
+  background: #111820;
+}
+
+h1, h2, h3 {
+  font-family: "Arial", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.project-card {
+  background: #18212b;
+  border: 1px solid #364452;
+  padding: 20px;
+  border-radius: 6px;
+}
