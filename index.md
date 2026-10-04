@@ -7,13 +7,15 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
 <section class="hero">
   <div class="shell hero-grid">
     <div class="hero-copy">
+
+
+      <p class="eyebrow">ENGINEERING PORTFOLIO</p>
+      <h1>Kirtunia Rahul, <span>Ph.D.</span></h1>
+
       <div class="status-pill">
         <span class="status-dot"></span>
         Composite Structures · FEA · Advanced Manufacturing
       </div>
-
-      <p class="eyebrow">ENGINEERING PORTFOLIO</p>
-      <h1>Kirtunia Rahul, <span>Ph.D.</span></h1>
 
       <p class="hero-lead">
         I combine composite mechanics, finite element analysis, manufacturing,
