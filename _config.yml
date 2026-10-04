@@ -2,7 +2,7 @@ title: "Kirtunia Rahul"
 description: "Composite Structural Engineer | FEA | Advanced Manufacturing"
 url: "https://kirtuniarahul.github.io"
 baseurl: ""
-theme: portfolYOU
+theme: jekyll-theme-particle
 
 markdown: kramdown
 permalink: pretty
