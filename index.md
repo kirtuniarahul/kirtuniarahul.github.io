@@ -11,7 +11,7 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
 
       <p class="eyebrow">ENGINEERING PORTFOLIO</p>
       <h1 style="margin-bottom: 30px;">
-        Kirtunia Rahul, Ph.D.</span></h1>
+        Kirtunia Rahul, Ph.D.</h1>
 
       <div class="status-pill">
         <span class="status-dot"></span>
