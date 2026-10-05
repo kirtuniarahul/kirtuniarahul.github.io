@@ -210,12 +210,15 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
 
 /* Keep single-image rows visually proportional to the text ribbon */
 .lshape-scroll-row .lshape-images > .lshape-figure:only-child {
-  width: min(100%, 59%);
+  width: 39%;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
   align-self: center;
 }
 
 .lshape-scroll-row .lshape-images > .lshape-figure:only-child img {
-  max-height: 340px;
+  max-height: 240px;
 }
 
 
