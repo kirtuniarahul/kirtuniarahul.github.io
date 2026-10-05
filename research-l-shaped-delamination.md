@@ -619,8 +619,7 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   width:100%;
   margin:0 auto;
 }
-.lshape-method-grid img,
-.lshape-method-grid video{
+.lshape-method-grid img{
   width:100%;
   max-height:245px;
   object-fit:contain;
@@ -632,6 +631,17 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   border-radius:12px;
   background:#02070d;
   object-fit:contain;
+}
+.lshape-video-crop{
+  overflow:hidden;
+  border-radius:12px;
+  background:#02070d;
+}
+.lshape-video-crop .lshape-inline-video{
+  transform:scale(1.65);
+  transform-origin:50% 48%;
+  max-height:220px;
+  object-fit:cover;
 }
 .lshape-result-stack{
   display:grid;
@@ -659,8 +669,24 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   line-height:1.36;
   text-align:center;
 }
+.lshape-fatigue-media{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+  width:min(100%,560px);
+  margin:0 auto;
+}
+.lshape-fatigue-media .lshape-figure{
+  width:100%;
+  margin:0 auto;
+}
+.lshape-fatigue-media img{
+  width:100%;
+  max-height:290px;
+  object-fit:contain;
+}
 .lshape-method-copy h3{
-  margin-top:24px;
+  margin-top:22px;
   margin-bottom:7px;
 }
 .lshape-method-copy h3:first-of-type{
@@ -669,9 +695,14 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
 @media(max-width:900px){
   .lshape-method-grid{grid-template-columns:1fr}
   .lshape-method-grid img,
-  .lshape-method-grid video,
-  .lshape-inline-video{max-height:none}
-  .lshape-result-stack{width:100%}
+  .lshape-inline-video,
+  .lshape-fatigue-media img{max-height:none}
+  .lshape-video-crop .lshape-inline-video{
+    transform:scale(1.45);
+    max-height:none;
+  }
+  .lshape-result-stack,
+  .lshape-fatigue-media{width:100%}
   .lshape-result-stack .lshape-figure img{max-height:none}
 }
 
@@ -1002,15 +1033,7 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
         <div class="lshape-images">
 
           <div class="lshape-method-grid">
-
-            <figure class="lshape-figure">
-              <img
-                src="{{ '/assets/images/research/l-shaped/four-point-bending-fixture.png' | relative_url }}"
-                alt="Static four-point bending fixture">
-              <figcaption>Static four-point bending test configuration.</figcaption>
-            </figure>
-
-            <figure class="lshape-figure">
+<figure class="lshape-figure">
               <img
                 src="{{ '/assets/images/research/l-shaped/finite-element-model.png' | relative_url }}"
                 alt="Finite element model of L-shaped laminate">
@@ -1018,12 +1041,14 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
             </figure>
 
             <figure class="lshape-figure">
-              <video class="lshape-inline-video" autoplay loop muted playsinline preload="auto">
-                <source
-                  src="{{ '/assets/videos/research/lshape-overview.mp4' | relative_url }}"
-                  type="video/mp4">
-              </video>
-              <figcaption>FEA animation of the L-shaped laminate under four-point bending.</figcaption>
+              <div class="lshape-video-crop">
+                <video class="lshape-inline-video" autoplay loop muted playsinline preload="auto">
+                  <source
+                    src="{{ '/assets/videos/research/lshape-overview.mp4' | relative_url }}"
+                    type="video/mp4">
+                </video>
+              </div>
+              <figcaption>FEA animation focused on the curved region.</figcaption>
             </figure>
 
             <figure class="lshape-figure">
@@ -1042,42 +1067,26 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
 
         <div class="lshape-copy lshape-method-copy">
 
-          <span class="step-number">02 · EXPERIMENTAL & NUMERICAL PROGRAM</span>
+          <span class="step-number">02 · STATIC FEA & FATIGUE METHOD</span>
 
-          <h2>Static testing, static FEA, and fatigue testing were evaluated together.</h2>
+          <h2>Static and fatigue behavior were evaluated experimentally and numerically.</h2>
 
           <h3>Static Analysis</h3>
           <p>
-            Static four-point bending was performed using a servo-hydraulic Instron 8801.
-            The upper rollers were 60 mm apart and the lower rollers were 100 mm apart,
-            following the ASTM D6415 test concept. Loading was applied at 2 mm/min until
-            the first delamination event.
+            Four-point bending was used to identify flexural response and delamination initiation.
           </p>
 
           <h3>Static FEA</h3>
           <p>
-            Individual plies were modeled with 3D solid elements and the ply interfaces
-            with cohesive elements. Matrix failure was represented using a 3D Hashin formulation,
-            while interfacial separation used traction-separation behavior with mixed-mode damage evolution.
+            3D solid plies and cohesive interfaces were used to predict matrix failure
+            and radial-stress-driven delamination.
           </p>
 
+          <h3>Fatigue</h3>
           <p>
-            The model contained approximately 141,104 elements and 249,562 nodes.
-            Experimentally measured interlaminar tensile strength was used to inform
-            the cohesive interface properties.
+            Displacement-controlled loading at 3 Hz and R = 0.1 was used to track
+            stiffness degradation, fatigue life, and delamination growth.
           </p>
-
-          <h3>Fatigue Analysis</h3>
-          <p>
-            Fatigue testing was displacement controlled using sinusoidal loading at 3 Hz
-            with an R-ratio of 0.1. Multiple severity levels were used to track fatigue life,
-            stiffness degradation, and progressive delamination.
-          </p>
-
-          <div class="lshape-note">
-            The videos run continuously so the experimental loading and the FE response can be compared
-            directly while reading the method.
-          </div>
 
         </div>
 
@@ -1125,33 +1134,17 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
           <span class="loading-mode static">Static Results</span>
           <span class="step-number">03 · STATIC DAMAGE & VALIDATION</span>
 
-          <h2>The static model reproduced both the global response and the observed damage locations.</h2>
+          <h2>Static loading identified the critical delamination locations.</h2>
 
           <p>
-            The force-displacement response increased smoothly until delamination initiation,
-            followed by a sudden load drop. Among the four configurations, the
-            <strong>unidirectional laminate showed the highest bending stiffness</strong>,
-            while the <strong>quasi-isotropic laminate showed the highest peak load and
-            delamination resistance</strong>.
+            UD showed the highest bending stiffness, while QI showed the highest peak load
+            and delamination resistance.
           </p>
 
           <p>
-            Finite element and experimental peak loads agreed closely, with the reported
-            difference ranging from approximately 0.7% to 6.6%. The model also reproduced
-            the first load-drop behavior associated with delamination initiation.
+            Experimental and simulated peak loads differed by about 0.7–6.6%.
+            Microscopy and X-ray CT confirmed the predicted damage locations.
           </p>
-
-          <p>
-            The failure mechanism was interpreted using radial stress through the curved region.
-            Predicted delamination locations and matrix cracking were then compared with
-            optical microscopy and X-ray CT, providing validation beyond only the
-            global load-displacement curve.
-          </p>
-
-          <div class="lshape-note">
-            Static testing answered two linked questions:
-            <strong>where does delamination initiate, and does the model predict the same damage seen experimentally?</strong>
-          </div>
 
         </div>
 
@@ -1166,14 +1159,27 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
 
         <div class="lshape-images">
 
-          <figure class="lshape-figure">
-            <img
-              src="{{ '/assets/images/research/l-shaped/fatigue-stiffness-delamination.png' | relative_url }}"
-              alt="Fatigue stiffness degradation and delamination development">
-            <figcaption>
-              Fatigue stiffness degradation and delamination development during repeated loading.
-            </figcaption>
-          </figure>
+          <div class="lshape-fatigue-media">
+
+            <figure class="lshape-figure">
+              <img
+                src="{{ '/assets/images/research/l-shaped/Picture12.png' | relative_url }}"
+                alt="Fatigue microscopy showing delamination and transverse cracking">
+              <figcaption>
+                High-severity fatigue damage showing delamination (DE) and transverse cracking (TC).
+              </figcaption>
+            </figure>
+
+            <figure class="lshape-figure">
+              <img
+                src="{{ '/assets/images/research/l-shaped/Picture11.png' | relative_url }}"
+                alt="Quasi-isotropic fatigue stiffness degradation and progressive delamination">
+              <figcaption>
+                QI interrupted fatigue test showing Stage-1 and Stage-2 delamination growth.
+              </figcaption>
+            </figure>
+
+          </div>
 
         </div>
 
@@ -1183,40 +1189,18 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
           <span class="loading-mode fatigue">Fatigue Results</span>
           <span class="step-number">04 · FATIGUE DAMAGE DEVELOPMENT</span>
 
-          <h2>Higher cyclic severity produced more extensive interlaminar and intralaminar damage.</h2>
+          <h2>Damage increased with cyclic severity and stiffness degradation.</h2>
 
           <p>
-            At 80% severity, the fatigue response showed multiple delaminations.
-            The unidirectional laminate developed multiple delaminations without transverse cracking,
-            while the helicoidal, quasi-isotropic, and cross-ply laminates showed multiple
-            delaminations accompanied by numerous transverse cracks.
+            At 80% severity, UD developed multiple delaminations without transverse cracking,
+            while HC, QI, and CP showed delamination with transverse cracking.
           </p>
 
           <p>
-            The high-severity fatigue damage pattern was similar to the static damage state.
-            At lower severity, fewer delaminations and transverse cracks were observed.
-            This indicates that higher cyclic loads promoted subcritical debonding and matrix
-            microcracking, which increased both interlaminar and intralaminar damage.
+            For QI, the first delamination formed near one-third of the thickness.
+            A second delamination formed near three-fifths, with about
+            <strong>40% stiffness loss</strong> and a <strong>95% increase in delaminated area</strong>.
           </p>
-
-          <h3>Quasi-isotropic interrupted fatigue test</h3>
-
-          <p>
-            For the quasi-isotropic laminate, the first delamination was observed approximately
-            one-third of the laminate thickness from the inner radius. After additional cycling,
-            a second delamination developed near three-fifths of the thickness.
-          </p>
-
-          <p>
-            The onset of the second delamination corresponded to approximately
-            <strong>40% stiffness loss</strong>, while the measured delaminated area increased by
-            approximately <strong>95%</strong>.
-          </p>
-
-          <div class="lshape-note fatigue-note">
-            The fatigue results connect <strong>stiffness degradation</strong> with the physical
-            growth of delamination through the laminate thickness.
-          </div>
 
         </div>
 
