@@ -156,6 +156,7 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
   gap: 22px;
   align-self: start;
+  align-items: center;
 }
 
 
@@ -194,19 +195,23 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
     rgba(40,215,255,.38);
 }
 
+.progressive-figure figcaption {
+  text-align: center;
+}
+
 /* Keep single-image rows balanced against the text ribbon */
 .progressive-scroll-row .progressive-images > .progressive-figure:only-child {
-  width: min(100%, 72%);
+  width: min(100%, 59%);
   align-self: center;
 }
 
 .progressive-scroll-row .progressive-images > .progressive-figure:only-child img {
-  max-height: 420px;
+  max-height: 340px;
 }
 
 /* When a row contains both drilling image and video, keep both compact */
 .progressive-scroll-row .progressive-images > .progressive-figure:not(:only-child) {
-  width: min(100%, 82%);
+  width: min(100%, 68%);
   align-self: center;
 }
 
