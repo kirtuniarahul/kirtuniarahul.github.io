@@ -7,8 +7,8 @@ description: "Professional experience of Kirtunia Rahul."
 
 <style>
 .experience-logo{
-  width:172px;
-  height:172px;
+  width:300px;
+  height:300px;
   object-fit:contain;
   display:block;
   margin:14px auto 0;
@@ -48,10 +48,9 @@ description: "Professional experience of Kirtunia Rahul."
           <h4>Zephyrhills, Florida</h4>
           <p class="education-meta">Jan 2026–Present</p>
           <ul>
-            <li>Reduced manufacturing cost by $750K/year through laminate optimization.</li>
-            <li>Developed resin spray process saving $350K/year.</li>
-            <li>Supported 3 new products; increased structural strength by 33% using existing laminate.</li>
-            <li>Performed FEA, DFMEA and manufacturing optimization with cross-functional teams.</li>
+            <li>Supported multiple new product launches through FEA-based structural stress and failure analysis and load case development for manufacturing validation of composite structures under service, transportation, and extreme loading conditions.</li>
+            <li>Performed design iterations and structural assessments to evaluate stress, deformation, failure risk, laminate configuration, and reinforcement requirements while balancing structural performance, manufacturability, and cost.</li>
+            <li>Led process development trials and root cause analysis to develop new laminate systems and a new flake-resin spray process maintaining structural integrity while reducing manufacturing costs by approximately $1M annually</li>
           </ul>
         </div>
       </article>
@@ -67,9 +66,9 @@ description: "Professional experience of Kirtunia Rahul."
           <h4>Dublin, Ohio</h4>
           <p class="education-meta">Apr 2025–Dec 2025</p>
           <ul>
-            <li>Performed pipeline integrity and FEA assessments per API/ASME/PHMSA.</li>
-            <li>Developed strain-based pipe-soil interaction and risk evaluation models.</li>
-            <li>Prepared technical procedures and regulatory documentation.</li>
+            <li>Conducted metallic pipeline integrity assessments using classical engineering calculations and finite element analysis (FEA) under burst pressure, bending, axial loading, thermal loading, and geohazard-induced deformation.</li>
+            <li>Performed fracture mechanics and Fitness-for-Service (API 579) assessments for damaged steel structures containing ILI (inline inspection) informed defects including corrosion, dents, cracks, weld defects, and gouges.</li>
+            <li>Prepared engineering substantiation reports, technical documentation, and engineering procedures supporting regulatory compliance and design validation</li>
           </ul>
         </div>
       </article>
@@ -85,9 +84,10 @@ description: "Professional experience of Kirtunia Rahul."
           <h4>Waco, Texas</h4>
           <p class="education-meta">Jan 2021–May 2025</p>
           <ul>
-            <li>Developed FEA models within 5% experimental accuracy.</li>
-            <li>Created ultrasound/X-ray CT algorithms for defect quantification.</li>
-            <li>Designed composite tooling and fixtures using SolidWorks.</li>
+            <li>Developed advanced stress and failure analysis algorithms for FEA using Python and Fortran scripting (ABAQUS subroutines) validated through static and fatigue structural testing with prediction accuracy within 5% of experimental results.</li>
+            <li>Developed statistical models for uncertainty quantification, aiding industries in assessing failure probabilities of composite within a confidence interval of 2.</li>
+            <li>Designed and conducted static and fatigue experiments to validate structural models and investigate damage initiation and progression in carbon-fiber composite structures</li>
+            <li>Developed NDT data analysis algorithms (X-ray CT, Ultrasound) using machine learning based signal and image processing for inherent damage detection and integrated into finite element models to improve structural failure prediction.<li>
           </ul>
         </div>
       </article>
@@ -120,7 +120,9 @@ description: "Professional experience of Kirtunia Rahul."
           <h4>Dhaka, Bangladesh</h4>
           <p class="education-meta">Oct 2017–Nov 2020</p>
           <ul>
-            <li>Designed hull structures, produced drawings/BOMs, and performed structural analysis.</li>
+            <li>Designed hull structure and layout of 'Y-HULL' vessel using AutoCAD and Rhinoceros, maintaining GD&T requirements</li>
+            </li>Performed structural stress analysis of marine metallic structures using ABAQUS and MAXSURF for sea-condition design optimization<li>               </li>Assisted in designing tooling and fixtures; maintained multi-axis CNC programs (G-code & M-code) for plate cutting and assembly operations<li>
+            <li>Generated BOQ documents and interfaced with customers to schedule timeline and milestones for project completion.<li>
           </ul>
         </div>
       </article>
