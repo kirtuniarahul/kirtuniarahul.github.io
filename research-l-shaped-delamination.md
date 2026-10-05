@@ -999,7 +999,7 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
     <section class="lshape-story">
 
       <div class="lshape-story-intro">
-        <p class="eyebrow">METHOD · RESULTS</p>
+        <p class="eyebrow">METHOD</p>
         <h2>From material system to static and fatigue damage.</h2>
         <p>
           The research follows a clear sequence: manufacture L-shaped laminates with controlled
