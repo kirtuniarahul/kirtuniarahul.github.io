@@ -7,8 +7,8 @@ description: "Professional experience of Kirtunia Rahul."
 
 <style>
 .experience-logo{
-  width:86px;
-  height:86px;
+  width:172px;
+  height:172px;
   object-fit:contain;
   display:block;
   margin:14px auto 0;
@@ -21,7 +21,7 @@ description: "Professional experience of Kirtunia Rahul."
   text-align:center;
 }
 @media(max-width:700px){
-  .experience-logo{width:74px;height:74px}
+  .experience-logo{width:148px;height:148px}
 }
 </style>
 
