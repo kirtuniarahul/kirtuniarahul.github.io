@@ -610,7 +610,7 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
 .lshape-method-grid{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:16px;
+  gap:18px;
   width:100%;
   margin:0 auto;
   align-items:start;
@@ -621,13 +621,13 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
 }
 .lshape-method-grid img{
   width:100%;
-  max-height:245px;
+  max-height:300px;
   object-fit:contain;
 }
 .lshape-inline-video{
   display:block;
   width:100%;
-  max-height:245px;
+  max-height:300px;
   border-radius:12px;
   background:#02070d;
   object-fit:contain;
@@ -638,10 +638,23 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   background:#02070d;
 }
 .lshape-video-crop .lshape-inline-video{
-  transform:scale(1.65);
+  transform:scale(1.55);
   transform-origin:50% 48%;
-  max-height:220px;
+  max-height:360px;
   object-fit:cover;
+}
+.lshape-fea-animation-card{
+  grid-column:1 / -1;
+  width:100%;
+  max-width:760px;
+  justify-self:center;
+}
+.lshape-fea-animation-card .lshape-video-crop{
+  min-height:320px;
+}
+.lshape-fea-animation-card .lshape-inline-video{
+  height:320px;
+  max-height:320px;
 }
 .lshape-result-stack{
   display:grid;
@@ -1033,22 +1046,12 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
         <div class="lshape-images">
 
           <div class="lshape-method-grid">
-<figure class="lshape-figure">
+
+            <figure class="lshape-figure">
               <img
                 src="{{ '/assets/images/research/l-shaped/finite-element-model.png' | relative_url }}"
                 alt="Finite element model of L-shaped laminate">
               <figcaption>Three-dimensional finite element model of the L-shaped laminate.</figcaption>
-            </figure>
-
-            <figure class="lshape-figure">
-              <div class="lshape-video-crop">
-                <video class="lshape-inline-video" autoplay loop muted playsinline preload="auto">
-                  <source
-                    src="{{ '/assets/videos/research/lshape-overview.mp4' | relative_url }}"
-                    type="video/mp4">
-                </video>
-              </div>
-              <figcaption>FEA animation focused on the curved region.</figcaption>
             </figure>
 
             <figure class="lshape-figure">
@@ -1058,6 +1061,17 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
                   type="video/mp4">
               </video>
               <figcaption>Displacement-controlled cyclic four-point bending test.</figcaption>
+            </figure>
+
+            <figure class="lshape-figure lshape-fea-animation-card">
+              <div class="lshape-video-crop">
+                <video class="lshape-inline-video" autoplay loop muted playsinline preload="auto">
+                  <source
+                    src="{{ '/assets/videos/research/lshape-overview.mp4' | relative_url }}"
+                    type="video/mp4">
+                </video>
+              </div>
+              <figcaption>FEA animation focused on the curved region.</figcaption>
             </figure>
 
           </div>
