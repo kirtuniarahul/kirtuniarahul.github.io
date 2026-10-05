@@ -554,6 +554,12 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
     gap: 30px;
 
     margin-bottom: 80px;
+
+    align-items: start;
+  }
+
+  .lshape-images {
+    align-self: start;
   }
 
 
