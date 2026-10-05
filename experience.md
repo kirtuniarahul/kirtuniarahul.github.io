@@ -7,6 +7,11 @@ description: "Professional experience of Kirtunia Rahul."
 
 <style>
 /* Experience timeline — centered square logo column */
+.timeline-content .degree-badge{
+  font-size:1rem;
+  padding:9px 14px;
+}
+
 .timeline::before{
   display:none;
 }
