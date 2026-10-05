@@ -851,7 +851,7 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
       <div class="progressive-story-intro">
 
         <p class="eyebrow">
-          BRIEF SUMMARY · CONCLUSION
+          METHOD
         </p>
 
         <h2>
