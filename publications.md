@@ -31,6 +31,13 @@ description: "Publications and presentations of Kirtunia Rahul."
   border-color:rgba(40,215,255,.5);
   background:rgba(40,215,255,.09);
 }
+.publication-title-link{
+  color:inherit;
+  text-decoration:none;
+}
+.publication-title-link:hover{
+  color:var(--cyan);
+}
 </style>
 
 <section class="page-hero">
@@ -123,6 +130,7 @@ description: "Publications and presentations of Kirtunia Rahul."
           <span class="pub-type">ASNT 32nd Research Symposium · June 2024</span>
           <h3>Feeding the Digital Twin – Using Ultrasonic Waveforms for Part Specific Features for Finite Element Analysis of Composite Components</h3>
           <p>Pittsburgh, Pennsylvania</p>
+          <div class="pub-meta"><span>Keynote Speaker</span></div>
         </article>
 
         <article class="publication-card">
@@ -135,6 +143,7 @@ description: "Publications and presentations of Kirtunia Rahul."
           <span class="pub-type">O.U.R. 2024 Fall Conference · November 2024</span>
           <h3>Cohesive Zone Modeling Strategy to Simulate Progressive Delamination Failure in L-Shaped CFRP Laminates with Varying Inter-Ply Angle Difference</h3>
           <p>Lamar University · Beaumont, Texas</p>
+          <div class="pub-meta"><span>Outstanding Presentation</span></div>
         </article>
 
       </div>
@@ -146,33 +155,33 @@ description: "Publications and presentations of Kirtunia Rahul."
 
         <article class="publication-card">
           <span class="pub-type">SPE ACCE · September 2022</span>
-          <h3>Investigating the Impact from Ultrasonic Testing Uncertainty in Quantifying Ply Stack Orientation on the Probabilistic Failure Envelope</h3>
+          <h3><a class="publication-title-link" href="{{ '/assets/publications/3_17_posteracce.pdf' | relative_url }}">Investigating the Impact from Ultrasonic Testing Uncertainty in Quantifying Ply Stack Orientation on the Probabilistic Failure Envelope</a></h3>
           <p>Novi, Michigan</p>
           <div class="pub-meta"><span>Second Place · Student Poster Competition</span></div>
         </article>
 
         <article class="publication-card">
           <span class="pub-type">SPE International Polyolefins Conference · February 2024</span>
-          <h3>Progressive Damage Modeling in Open Hole Composite Laminates with Ultrasound-Informed Drilling-Induced Delamination</h3>
+          <h3><a class="publication-title-link" href="{{ '/assets/publications/3_18_posterpolyolefins.pdf' | relative_url }}">Progressive Damage Modeling in Open Hole Composite Laminates with Ultrasound-Informed Drilling-Induced Delamination</a></h3>
           <p>Galveston, Texas</p>
         </article>
 
         <article class="publication-card">
           <span class="pub-type">ECS Research Showcase · April 2024</span>
-          <h3>Progressive Damage Modeling in Open Hole Composite Laminates with Ultrasound-Informed Drilling-Induced Delamination</h3>
+          <h3><a class="publication-title-link" href="{{ '/assets/publications/ECS_kirtunia.pdf' | relative_url }}">Progressive Damage Modeling in Open Hole Composite Laminates with Ultrasound-Informed Drilling-Induced Delamination</a></h3>
           <p>Baylor University · Waco, Texas</p>
         </article>
 
         <article class="publication-card">
           <span class="pub-type">Thermoset TOPCON · April 2024</span>
-          <h3>Inspection to Prediction – Unraveling the Link Between UT-Informed Drilling-Induced Delamination and Failure of Carbon Fiber Thermoset Polymers</h3>
+          <h3><a class="publication-title-link" href="{{ '/assets/publications/3_19_topconposter.pdf' | relative_url }}">Inspection to Prediction – Unraveling the Link Between UT-Informed Drilling-Induced Delamination and Failure of Carbon Fiber Thermoset Polymers</a></h3>
           <p>Madison, Wisconsin</p>
           <div class="pub-meta"><span>Best Poster · Student Poster Competition</span></div>
         </article>
 
         <article class="publication-card">
           <span class="pub-type">SPE ACCE · September 2024</span>
-          <h3>Failure Analysis of Geometrically Curved L-Shaped Carbon Fiber Composite Laminates</h3>
+          <h3><a class="publication-title-link" href="{{ '/assets/publications/2024_SPE_ACCE_Poster_kirtunia.pdf' | relative_url }}">Failure Analysis of Geometrically Curved L-Shaped Carbon Fiber Composite Laminates</a></h3>
           <p>Novi, Michigan</p>
         </article>
 
@@ -184,7 +193,7 @@ description: "Publications and presentations of Kirtunia Rahul."
       <div class="publication-grid">
         <article class="publication-card">
           <span class="pub-type">B.Sc. Thesis · 2017</span>
-          <h3>Analysis of Pressure Characteristics of Propeller Blade</h3>
+          <h3><a class="publication-title-link" href="{{ '/assets/publications/ANALYSIS OF PRESSURE CHARACTERISTICS OF PROPELLER BLADE 2.pdf' | relative_url }}">Analysis of Pressure Characteristics of Propeller Blade</a></h3>
           <p>Md. Sourov Hossain Mithun, Mahabubur Rohoman, Kirtunia Rahul</p>
           <div class="pub-meta">
             <span>Bangladesh University of Engineering and Technology</span>
