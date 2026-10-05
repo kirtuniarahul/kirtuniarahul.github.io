@@ -619,10 +619,15 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   width:100%;
   margin:0 auto;
 }
-.lshape-method-grid img{
+.lshape-method-grid > .lshape-figure:not(.lshape-fea-animation-card) img,
+.lshape-method-grid > .lshape-figure:not(.lshape-fea-animation-card) .lshape-inline-video{
+  display:block;
   width:100%;
-  max-height:300px;
+  height:260px;
+  max-height:none;
   object-fit:contain;
+  border-radius:12px;
+  background:#02070d;
 }
 .lshape-inline-video{
   display:block;
@@ -671,10 +676,13 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   text-align:center;
 }
 .lshape-result-stack .lshape-figure img{
-  width:auto;
+  display:block;
+  width:100%;
   max-width:100%;
+  height:165px;
   max-height:165px;
   margin:0 auto;
+  object-fit:contain;
 }
 .lshape-result-stack .lshape-figure figcaption{
   padding:8px 3px 1px;
@@ -716,7 +724,16 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   }
   .lshape-result-stack,
   .lshape-fatigue-media{width:100%}
-  .lshape-result-stack .lshape-figure img{max-height:none}
+  .lshape-result-stack .lshape-figure img{
+    width:100%;
+    height:auto;
+    max-height:none;
+  }
+  .lshape-method-grid > .lshape-figure:not(.lshape-fea-animation-card) img,
+  .lshape-method-grid > .lshape-figure:not(.lshape-fea-animation-card) .lshape-inline-video{
+    height:auto;
+    max-height:none;
+  }
 }
 
 </style>
