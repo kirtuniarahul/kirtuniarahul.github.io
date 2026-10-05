@@ -96,11 +96,11 @@ description: "Failure onset analysis of composite laminates with uncertainty in 
             </figure>
             <figure class="failure-figure">
               <img src="{{ '/assets/images/research/failure-onset/envelope-6ply.png' | relative_url }}" alt="Failure envelope sensitivity for six lamina laminate">
-              <figcaption>Failure-envelope sensitivity for a 6-lamina laminate.</figcaption>
+              <figcaption>Failure-envelope sensitivity for a standard deviation of 2° in ply orientation.</figcaption>
             </figure>
             <figure class="failure-figure">
               <img src="{{ '/assets/images/research/failure-onset/envelope-18ply.png' | relative_url }}" alt="Failure envelope sensitivity for eighteen lamina laminate">
-              <figcaption>Failure-envelope sensitivity for an 18-lamina laminate.</figcaption>
+              <figcaption>Failure-envelope sensitivity for a standard deviation of 10° in ply orientation.</figcaption>
             </figure>
           </div>
         </div>
