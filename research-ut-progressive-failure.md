@@ -591,6 +591,55 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
 }
 
+
+/* Project 3 video + validation refinements */
+.progressive-validation-large{
+  width:100% !important;
+  max-width:600px !important;
+}
+.progressive-validation-large img{
+  max-height:640px !important;
+}
+.progressive-three-video{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  width:100%;
+  margin:0 auto 16px;
+}
+.progressive-three-video .progressive-figure{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:9px;
+}
+.progressive-three-video video{
+  display:block;
+  width:100%;
+  height:180px;
+  object-fit:contain;
+  border-radius:11px;
+  background:#02070d;
+}
+.progressive-media2{
+  width:min(100%,75%);
+  margin:0 auto;
+}
+.progressive-media2 video{
+  display:block;
+  width:100%;
+  max-height:300px;
+  object-fit:contain;
+  border-radius:12px;
+  background:#02070d;
+}
+@media(max-width:900px){
+  .progressive-validation-large{max-width:none !important}
+  .progressive-three-video{grid-template-columns:1fr}
+  .progressive-three-video video{height:auto;max-height:none}
+  .progressive-media2{width:100%}
+}
+
 </style>
 
 
@@ -832,9 +881,11 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
             <video
               class="progressive-inline-video"
-              controls
+              autoplay
+              loop
               muted
-              preload="metadata">
+              playsinline
+              preload="auto">
 
               <source
                 src="{{ '/assets/videos/research/progressive-failure/drilling-process.MOV' | relative_url }}"
@@ -1020,6 +1071,17 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
         <div class="progressive-images">
 
+          <figure class="progressive-figure progressive-media2">
+            <video autoplay loop muted playsinline preload="auto">
+              <source
+                src="{{ '/assets/videos/research/progressive-failure/Media2.avi' | relative_url }}"
+                type="video/x-msvideo">
+            </video>
+            <figcaption>
+              Inspection-informed damage representation used before FE prediction.
+            </figcaption>
+          </figure>
+
           <figure class="progressive-figure">
 
             <img
@@ -1118,7 +1180,7 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
         <div class="progressive-images">
 
-          <figure class="progressive-figure">
+          <figure class="progressive-figure progressive-validation-large">
 
             <img
               src="{{ '/assets/images/research/progressive-failure/dic-fea-strain-validation.png' | relative_url }}"
@@ -1244,83 +1306,6 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
         </div>
 
       </div>
-
-
-
-      <!-- ==================================================
-           VIDEOS FROM SLIDE 57
-           ================================================== -->
-
-      <section class="progressive-video-section">
-
-        <p class="eyebrow">
-          RESEARCH VIDEOS · SLIDE 57
-        </p>
-
-        <h2>
-          Experimental and finite element progressive failure
-        </h2>
-
-
-        <div class="progressive-video-grid">
-
-
-          <div class="progressive-video-card">
-
-            <video
-              class="progressive-video"
-              controls
-              muted
-              preload="metadata">
-
-              <source
-                src="{{ '/assets/videos/research/progressive-failure/open-hole-experiment.mp4' | relative_url }}"
-                type="video/mp4">
-
-            </video>
-
-            <h3>
-              Open-Hole Experiment
-            </h3>
-
-            <p>
-              Experimental open-hole loading and failure development
-              in the drilled composite specimen.
-            </p>
-
-          </div>
-
-
-
-          <div class="progressive-video-card">
-
-            <video
-              class="progressive-video"
-              controls
-              muted
-              preload="metadata">
-
-              <source
-                src="{{ '/assets/videos/research/progressive-failure/progressive-failure-fea.mp4' | relative_url }}"
-                type="video/mp4">
-
-            </video>
-
-            <h3>
-              Progressive Failure Simulation
-            </h3>
-
-            <p>
-              Abaqus/Explicit simulation showing the evolution
-              of damage around the drilled hole.
-            </p>
-
-          </div>
-
-
-        </div>
-
-      </section>
 
 
 
