@@ -34,16 +34,16 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
           <span>Fiberglass · CFRP </span>
         </div>
         <div>
-          <strong>DESIGN & FEA</strong>
+          <strong>Design & FEA</strong>
           <span>ABAQUS · SolidWorks</span>
         </div>
         <div>
-          <strong>STRUCTURAL ANALYSIS</strong>
-          <span>STRESS ANALYSIS · FAILURE ANALYSIS</span>
+          <strong>Structural Analysis</strong>
+          <span>Stress Analysis · Failure Analysis</span>
         </div>
         <div>
-          <strong>NONDESTRUCTIVE TESTING</strong>
-          <span>ULTRASOUND · X-RAY CT · DIC</span>
+          <strong>Nondestructive Testing</strong>
+          <span>Ultrasound · X-Ray CT · DIC</span>
         </div>
       </div>
     </div>
@@ -124,7 +124,7 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
   <div class="shell contact-strip-inner">
     <div>
       <p class="eyebrow">CONNECT</p>
-      <h2>Engineering, research, and collaboration</h2>
+      <h2>Composite Structures · FEA · Nondestructive Testing</h2>
     </div>
     <div class="contact-buttons">
       <a href="mailto:kirtunia_rahul1@alumni.baylor.edu">Email Me</a>
