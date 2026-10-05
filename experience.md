@@ -6,22 +6,60 @@ description: "Professional experience of Kirtunia Rahul."
 ---
 
 <style>
+/* Experience timeline — centered square logo column */
+.timeline::before{
+  display:none;
+}
+
+.timeline-card{
+  grid-template-columns:260px minmax(0,1fr);
+  gap:34px;
+  align-items:center;
+}
+
+.timeline-year{
+  width:100%;
+  padding:0;
+  border:0;
+  background:transparent;
+  border-radius:0;
+  align-self:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  text-align:center;
+}
+
 .experience-logo{
-  width:300px;
-  height:300px;
+  width:230px;
+  height:230px;
+  aspect-ratio:1 / 1;
   object-fit:contain;
   display:block;
-  margin:14px auto 0;
-  padding:8px;
-  border-radius:16px;
+  margin:0 auto;
+  padding:6px;
+  box-sizing:border-box;
+  border-radius:18px;
   background:rgba(255,255,255,.96);
   border:1px solid rgba(255,255,255,.12);
 }
-.timeline-year{
-  text-align:center;
-}
+
 @media(max-width:700px){
-  .experience-logo{width:148px;height:148px}
+  .timeline-card{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .timeline-year{
+    width:100%;
+  }
+
+  .experience-logo{
+    width:200px;
+    height:200px;
+  }
 }
 </style>
 
