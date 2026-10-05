@@ -622,9 +622,10 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 .progressive-damage-video-row{
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:12px;
-  width:100%;
-  margin:0 auto 16px;
+  gap:18px;
+  width:150%;
+  max-width:none;
+  margin:0 -25% 22px;
 }
 .progressive-damage-video-row .progressive-figure{
   width:100% !important;
@@ -644,6 +645,8 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 @media(max-width:900px){
   .progressive-damage-video-row{
     grid-template-columns:1fr;
+    width:100%;
+    margin:0 auto 16px;
   }
 }
 </style>
