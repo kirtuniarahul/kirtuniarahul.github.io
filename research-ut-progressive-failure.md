@@ -1081,8 +1081,8 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
           <figure class="progressive-figure progressive-media2">
             <video autoplay loop muted playsinline preload="auto">
               <source
-                src="{{ '/assets/videos/research/progressive-failure/Media2.avi' | relative_url }}"
-                type="video/x-msvideo">
+                src="{{ '/assets/videos/research/progressive-failure/Media2.mp4' | relative_url }}"
+                type="video/mp4">
             </video>
             <figcaption>
               Inspection-informed damage representation used before FE prediction.
