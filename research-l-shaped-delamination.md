@@ -133,7 +133,7 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
       72px
     );
 
-  align-items: start;
+  align-items: center;
 
   margin-bottom: 130px;
 }
@@ -149,13 +149,13 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   flex-direction: column;
 
   gap: 22px;
-  align-self: start;
+  align-self: center;
   align-items: center;
 }
 
 
 .lshape-figure {
-  margin: 0;
+  margin: 0 auto;
 
   padding: 12px;
 
@@ -210,15 +210,15 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
 
 /* Keep single-image rows visually proportional to the text ribbon */
 .lshape-scroll-row .lshape-images > .lshape-figure:only-child {
-  width: 39%;
-  max-width: 220px;
+  width: 52%;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
   align-self: center;
 }
 
 .lshape-scroll-row .lshape-images > .lshape-figure:only-child img {
-  max-height: 240px;
+  max-height: 320px;
 }
 
 
@@ -280,6 +280,9 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   gap: 10px;
 
   align-items: start;
+
+  width: min(100%, 520px);
+  margin: 0 auto;
 }
 
 
@@ -289,7 +292,7 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
 
 
 .lshape-image-three img {
-  max-height: 125px;
+  max-height: 180px;
 }
 
 
