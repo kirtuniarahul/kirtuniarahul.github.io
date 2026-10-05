@@ -39,13 +39,13 @@ description: "Professional experience of Kirtunia Rahul."
 
       <article class="timeline-card">
         <div class="timeline-year">
-          2026–Present
+          Present
           <img class="experience-logo" src="{{ '/assets/images/experience/latham.png' | relative_url }}" alt="Latham logo">
         </div>
         <div class="timeline-content">
           <span class="degree-badge">Senior Composite Structural Engineer</span>
           <h3>Latham</h3>
-          <h4>FL</h4>
+          <h4>Zephyrhills, Florida</h4>
           <p class="education-meta">Jan 2026–Present</p>
           <ul>
             <li>Reduced manufacturing cost by $750K/year through laminate optimization.</li>
@@ -64,6 +64,7 @@ description: "Professional experience of Kirtunia Rahul."
         <div class="timeline-content">
           <span class="degree-badge alt">Research Engineer II</span>
           <h3>Center for Reliable Energy Systems</h3>
+          <h4>Dublin, Ohio</h4>
           <p class="education-meta">Apr 2025–Dec 2025</p>
           <ul>
             <li>Performed pipeline integrity and FEA assessments per API/ASME/PHMSA.</li>
@@ -75,12 +76,13 @@ description: "Professional experience of Kirtunia Rahul."
 
       <article class="timeline-card">
         <div class="timeline-year">
-          2021–2025
+          2025
           <img class="experience-logo" src="{{ '/assets/images/experience/baylor.png' | relative_url }}" alt="Baylor University logo">
         </div>
         <div class="timeline-content">
           <span class="degree-badge third">Graduate Research Assistant</span>
           <h3>Baylor University</h3>
+          <h4>Waco, Texas</h4>
           <p class="education-meta">Jan 2021–May 2025</p>
           <ul>
             <li>Developed FEA models within 5% experimental accuracy.</li>
@@ -109,12 +111,13 @@ description: "Professional experience of Kirtunia Rahul."
 
       <article class="timeline-card">
         <div class="timeline-year">
-          2017–2020
+          2018
           <img class="experience-logo" src="{{ '/assets/images/experience/shipdyn.png' | relative_url }}" alt="ShipDyn logo">
         </div>
         <div class="timeline-content">
           <span class="degree-badge third">Assistant Naval Architect</span>
           <h3>ShipDyn Ltd.</h3>
+          <h4>Dhaka, Bangladesh</h4>
           <p class="education-meta">Oct 2017–Nov 2020</p>
           <ul>
             <li>Designed hull structures, produced drawings/BOMs, and performed structural analysis.</li>
