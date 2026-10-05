@@ -638,8 +638,8 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   background:#02070d;
 }
 .lshape-video-crop .lshape-inline-video{
-  transform:scale(1.55);
-  transform-origin:50% 48%;
+  transform:scale(2);
+  transform-origin:50% 50%;
   max-height:360px;
   object-fit:cover;
 }
