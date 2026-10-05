@@ -552,6 +552,12 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
     gap: 30px;
 
     margin-bottom: 80px;
+
+    align-items: start;
+  }
+
+  .progressive-images {
+    align-self: start;
   }
 
 
