@@ -124,7 +124,7 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
   <div class="shell contact-strip-inner">
     <div>
       <p class="eyebrow">CONNECT</p>
-      <h2>Composite Structures · FEA · Nondestructive Testing</h2>
+      <h2>Engineering, research, and collaboration</h2>
     </div>
     <div class="contact-buttons">
       <a href="mailto:kirtunia_rahul1@alumni.baylor.edu">Email Me</a>
