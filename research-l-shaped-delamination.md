@@ -150,6 +150,7 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
 
   gap: 22px;
   align-self: start;
+  align-items: center;
 }
 
 
@@ -188,14 +189,33 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
     rgba(40,215,255,.38);
 }
 
+.lshape-figure figcaption {
+  text-align: center;
+}
+
+/* Keep the three-result validation set stacked and compact */
+.lshape-image-three .lshape-figure {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(125px, .42fr);
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+}
+
+.lshape-image-three .lshape-figure figcaption {
+  padding: 0;
+  font-size: .78rem;
+  line-height: 1.36;
+}
+
 /* Keep single-image rows visually proportional to the text ribbon */
 .lshape-scroll-row .lshape-images > .lshape-figure:only-child {
-  width: min(100%, 72%);
+  width: min(100%, 59%);
   align-self: center;
 }
 
 .lshape-scroll-row .lshape-images > .lshape-figure:only-child img {
-  max-height: 420px;
+  max-height: 340px;
 }
 
 
@@ -252,22 +272,21 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
 .lshape-image-three {
   display: grid;
 
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 
-  gap: 14px;
+  gap: 10px;
 
   align-items: start;
 }
 
 
 .lshape-image-pair img {
-  max-height: 245px;
+  max-height: 330px;
 }
 
 
 .lshape-image-three img {
-  max-height: 230px;
+  max-height: 125px;
 }
 
 
@@ -546,6 +565,14 @@ description: "Matrix failure and delamination analysis of L-shaped composite lam
   .lshape-image-three,
   .lshape-video-grid {
     grid-template-columns: 1fr;
+  }
+
+  .lshape-image-three .lshape-figure {
+    display: block;
+  }
+
+  .lshape-image-three .lshape-figure figcaption {
+    padding: 10px 3px 2px;
   }
 
 
