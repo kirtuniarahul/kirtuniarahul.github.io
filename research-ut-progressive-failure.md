@@ -260,6 +260,10 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
    RIGHT SIDE TEXT
    -------------------------------- */
 
+.progressive-scroll-row.damage-evolution-row{
+  grid-template-columns:minmax(520px,1.18fr) minmax(360px,.82fr);
+}
+
 .progressive-copy {
   position: sticky;
 
@@ -548,7 +552,8 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
 @media (max-width: 900px) {
 
-  .progressive-scroll-row {
+  .progressive-scroll-row,
+  .progressive-scroll-row.damage-evolution-row {
     grid-template-columns: 1fr;
 
     gap: 30px;
@@ -622,10 +627,10 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 .progressive-damage-video-row{
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:18px;
-  width:150%;
-  max-width:none;
-  margin:0 -25% 22px;
+  gap:16px;
+  width:100%;
+  max-width:100%;
+  margin:0 auto 22px;
 }
 .progressive-damage-video-row .progressive-figure{
   width:100% !important;
@@ -636,8 +641,9 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 .progressive-damage-video-row video{
   display:block;
   width:100%;
-  aspect-ratio:16/9;
+  aspect-ratio:4/3;
   height:auto;
+  min-height:220px;
   object-fit:contain;
   border-radius:11px;
   background:#02070d;
@@ -1252,7 +1258,7 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
            ROW 4 — PROGRESSIVE FAILURE
            ================================================== -->
 
-      <div class="progressive-scroll-row">
+      <div class="progressive-scroll-row damage-evolution-row">
 
 
         <div class="progressive-images">
