@@ -129,14 +129,14 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
   display: grid;
 
   grid-template-columns:
-    minmax(440px, 1.15fr)
-    minmax(330px, .85fr);
+    minmax(360px, .92fr)
+    minmax(420px, 1.08fr);
 
   gap:
     clamp(
-      42px,
-      7vw,
-      90px
+      38px,
+      5vw,
+      72px
     );
 
   align-items: start;
@@ -154,20 +154,21 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
   flex-direction: column;
 
-  gap: 26px;
+  gap: 22px;
+  align-self: start;
 }
 
 
 .progressive-figure {
   margin: 0;
 
-  padding: 14px;
+  padding: 12px;
 
   border:
     1px solid
     rgba(255,255,255,.11);
 
-  border-radius: 20px;
+  border-radius: 18px;
 
   background:
     linear-gradient(
@@ -177,8 +178,8 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
     );
 
   box-shadow:
-    0 28px 80px
-    rgba(0,0,0,.33);
+    0 22px 60px
+    rgba(0,0,0,.30);
 
   transform-origin: center;
 
@@ -193,6 +194,27 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
     rgba(40,215,255,.38);
 }
 
+/* Keep single-image rows balanced against the text ribbon */
+.progressive-scroll-row .progressive-images > .progressive-figure:only-child {
+  width: min(100%, 72%);
+  align-self: center;
+}
+
+.progressive-scroll-row .progressive-images > .progressive-figure:only-child img {
+  max-height: 420px;
+}
+
+/* When a row contains both drilling image and video, keep both compact */
+.progressive-scroll-row .progressive-images > .progressive-figure:not(:only-child) {
+  width: min(100%, 82%);
+  align-self: center;
+}
+
+.progressive-inline-video {
+  max-height: 360px;
+  object-fit: contain;
+}
+
 
 .progressive-figure img {
   display: block;
@@ -201,11 +223,11 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
   height: auto;
 
-  max-height: 620px;
+  max-height: 520px;
 
   object-fit: contain;
 
-  border-radius: 13px;
+  border-radius: 12px;
 
   background: #f8fafc;
 }
@@ -213,14 +235,14 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
 .progressive-figure figcaption {
   padding:
-    12px 4px
-    3px;
+    10px 3px
+    2px;
 
   color: #aebfce;
 
-  font-size: .84rem;
+  font-size: .80rem;
 
-  line-height: 1.5;
+  line-height: 1.42;
 }
 
 
@@ -231,9 +253,9 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 .progressive-copy {
   position: sticky;
 
-  top: 125px;
+  top: 118px;
 
-  padding-top: 30px;
+  padding-top: 8px;
 }
 
 
@@ -536,6 +558,11 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
     grid-template-columns: 1fr;
   }
 
+
+  .progressive-scroll-row .progressive-images > .progressive-figure:only-child,
+  .progressive-scroll-row .progressive-images > .progressive-figure:not(:only-child) {
+    width: 100%;
+  }
 
   .progressive-figure {
     transform: none !important;
