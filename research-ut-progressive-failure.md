@@ -201,12 +201,15 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
 /* Keep single-image rows balanced against the text ribbon */
 .progressive-scroll-row .progressive-images > .progressive-figure:only-child {
-  width: min(100%, 59%);
+  width: 39%;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
   align-self: center;
 }
 
 .progressive-scroll-row .progressive-images > .progressive-figure:only-child img {
-  max-height: 340px;
+  max-height: 240px;
 }
 
 /* When a row contains both drilling image and video, keep both compact */
