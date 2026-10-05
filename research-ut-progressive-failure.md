@@ -201,8 +201,8 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
 /* Keep single-image rows balanced against the text ribbon */
 .progressive-scroll-row .progressive-images > .progressive-figure:only-child {
-  width: 52%;
-  max-width: 300px;
+  width: min(100%, 75%);
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
   align-self: center;
@@ -594,11 +594,11 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
 /* Project 3 video + validation refinements */
 .progressive-validation-large{
-  width:100% !important;
-  max-width:600px !important;
+  width:min(100%,75%) !important;
+  max-width:none !important;
 }
 .progressive-validation-large img{
-  max-height:640px !important;
+  max-height:520px !important;
 }
 .progressive-three-video{
   display:grid;
@@ -616,13 +616,14 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 .progressive-three-video video{
   display:block;
   width:100%;
-  height:180px;
+  height:170px;
   object-fit:contain;
   border-radius:11px;
   background:#02070d;
 }
 .progressive-media2{
-  width:min(100%,75%);
+  width:min(100%,75%) !important;
+  max-width:none !important;
   margin:0 auto;
 }
 .progressive-media2 video{
@@ -889,7 +890,7 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
               <source
                 src="{{ '/assets/videos/research/progressive-failure/drilling-process.MOV' | relative_url }}"
-                type="video/quicktime">
+                type="video/mp4">
 
             </video>
 
@@ -1246,6 +1247,37 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
         <div class="progressive-images">
 
+          <div class="progressive-three-video">
+
+            <figure class="progressive-figure">
+              <video autoplay loop muted playsinline preload="auto">
+                <source
+                  src="{{ '/assets/videos/research/progressive-failure/open-hole-experiment.mp4' | relative_url }}"
+                  type="video/mp4">
+              </video>
+              <figcaption>Open-hole experiment.</figcaption>
+            </figure>
+
+            <figure class="progressive-figure">
+              <video autoplay loop muted playsinline preload="auto">
+                <source
+                  src="{{ '/assets/videos/research/progressive-failure/progressive-failure-fea.mp4' | relative_url }}"
+                  type="video/mp4">
+              </video>
+              <figcaption>Progressive failure simulation.</figcaption>
+            </figure>
+
+            <figure class="progressive-figure">
+              <video autoplay loop muted playsinline preload="auto">
+                <source
+                  src="{{ '/assets/videos/research/progressive-failure/Media1.mp4' | relative_url }}"
+                  type="video/mp4">
+              </video>
+              <figcaption>Damage evolution.</figcaption>
+            </figure>
+
+          </div>
+
           <figure class="progressive-figure">
 
             <img
@@ -1394,6 +1426,27 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
 </section>
 
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('video').forEach(function (video) {
+    video.muted = true;
+    video.loop = true;
+    video.autoplay = true;
+    video.setAttribute('playsinline', '');
+    const startVideo = function () {
+      const p = video.play();
+      if (p && typeof p.catch === 'function') {
+        p.catch(function () {});
+      }
+    };
+    video.addEventListener('canplay', startVideo, { once: false });
+    startVideo();
+  });
+});
+</script>
 
 
 <!-- =====================================================
