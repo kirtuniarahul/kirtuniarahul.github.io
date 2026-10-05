@@ -51,28 +51,7 @@ description: "Publications and presentations of Kirtunia Rahul."
           <span class="pub-type">Doctoral Dissertation</span>
           <h3>Finite Element-Based Failure Analysis of Composite Laminates with Non-Destructive Feature Quantification</h3>
           <p>Baylor University · 2025</p>
-          <div class="pub-meta">
-            <span>Composite mechanics</span>
-            <span>FEA</span>
-            <span>NDT</span>
-          </div>
           <a class="scholar-link" href="https://scholar.google.com/scholar?q=Finite%20Element-Based%20Failure%20Analysis%20of%20Composite%20Laminates%20with%20Non-Destructive%20Feature%20Quantification">View on Google Scholar →</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="publication-section">
-      <h2 class="publication-section-title">Master’s Thesis</h2>
-      <div class="publication-grid">
-        <article class="publication-card">
-          <span class="pub-type">Master’s Thesis</span>
-          <h3>Fiber Orientation Quantification in Large-Area Additive Manufacturing</h3>
-          <p>Baylor University · 2023</p>
-          <div class="pub-meta">
-            <span>LAAM</span>
-            <span>SEM</span>
-            <span>Image analysis</span>
-          </div>
         </article>
       </div>
     </section>
