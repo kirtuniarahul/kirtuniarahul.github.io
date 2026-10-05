@@ -125,7 +125,7 @@ description: "Professional experience of Kirtunia Rahul."
             <li>Developed advanced stress and failure analysis algorithms for FEA using Python and Fortran scripting (ABAQUS subroutines) validated through static and fatigue structural testing with prediction accuracy within 5% of experimental results.</li>
             <li>Developed statistical models for uncertainty quantification, aiding industries in assessing failure probabilities of composite within a confidence interval of 2.</li>
             <li>Designed and conducted static and fatigue experiments to validate structural models and investigate damage initiation and progression in carbon-fiber composite structures</li>
-            <li>Developed NDT data analysis algorithms (X-ray CT, Ultrasound) using machine learning based signal and image processing for inherent damage detection and integrated into finite element models to improve structural failure prediction.<li>
+            <li>Developed NDT data analysis algorithms (X-ray CT, Ultrasound) using machine learning based signal and image processing for inherent damage detection and integrated into finite element models to improve structural failure prediction.</li>
           </ul>
         </div>
       </article>
@@ -159,8 +159,9 @@ description: "Professional experience of Kirtunia Rahul."
           <p class="education-meta">Oct 2017–Nov 2020</p>
           <ul>
             <li>Designed hull structure and layout of 'Y-HULL' vessel using AutoCAD and Rhinoceros, maintaining GD&T requirements</li>
-            </li>Performed structural stress analysis of marine metallic structures using ABAQUS and MAXSURF for sea-condition design optimization<li>               </li>Assisted in designing tooling and fixtures; maintained multi-axis CNC programs (G-code & M-code) for plate cutting and assembly operations<li>
-            <li>Generated BOQ documents and interfaced with customers to schedule timeline and milestones for project completion.<li>
+            <li>Performed structural stress analysis of marine metallic structures using ABAQUS and MAXSURF for sea-condition design optimization</li>
+            <li>Assisted in designing tooling and fixtures; maintained multi-axis CNC programs (G-code & M-code) for plate cutting and assembly operations</li>
+            <li>Generated BOQ documents and interfaced with customers to schedule timeline and milestones for project completion.</li>
           </ul>
         </div>
       </article>
