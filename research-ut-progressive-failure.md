@@ -618,6 +618,34 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
   .progressive-media2{width:100%}
 }
 
+
+.progressive-damage-video-row{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  width:100%;
+  margin:0 auto 16px;
+}
+.progressive-damage-video-row .progressive-figure{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:9px;
+}
+.progressive-damage-video-row video{
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  height:auto;
+  object-fit:contain;
+  border-radius:11px;
+  background:#02070d;
+}
+@media(max-width:900px){
+  .progressive-damage-video-row{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 
 
@@ -1226,32 +1254,36 @@ description: "Progressive failure analysis of drilled-hole composite laminates w
 
         <div class="progressive-images">
 
-          <figure class="progressive-figure">
-            <video class="progressive-inline-video" autoplay loop muted playsinline controls preload="auto">
-              <source
-                src="{{ '/assets/videos/research/progressive-failure/open-hole-experiment.mp4' | relative_url }}"
-                type="video/mp4">
-            </video>
-            <figcaption>Open-hole experiment.</figcaption>
-          </figure>
+          <div class="progressive-damage-video-row">
 
-          <figure class="progressive-figure">
-            <video class="progressive-inline-video" autoplay loop muted playsinline controls preload="auto">
-              <source
-                src="{{ '/assets/videos/research/progressive-failure/progressive-failure-fea.mp4' | relative_url }}"
-                type="video/mp4">
-            </video>
-            <figcaption>Progressive failure simulation.</figcaption>
-          </figure>
+            <figure class="progressive-figure">
+              <video autoplay loop muted playsinline controls preload="auto">
+                <source
+                  src="{{ '/assets/videos/research/progressive-failure/open-hole-experiment.mp4' | relative_url }}"
+                  type="video/mp4">
+              </video>
+              <figcaption>Open-hole experiment.</figcaption>
+            </figure>
 
-          <figure class="progressive-figure">
-            <video class="progressive-inline-video" autoplay loop muted playsinline controls preload="auto">
-              <source
-                src="{{ '/assets/videos/research/progressive-failure/Media1.mp4' | relative_url }}"
-                type="video/mp4">
-            </video>
-            <figcaption>Stress contour.</figcaption>
-          </figure>
+            <figure class="progressive-figure">
+              <video autoplay loop muted playsinline controls preload="auto">
+                <source
+                  src="{{ '/assets/videos/research/progressive-failure/progressive-failure-fea.mp4' | relative_url }}"
+                  type="video/mp4">
+              </video>
+              <figcaption>Progressive failure simulation.</figcaption>
+            </figure>
+
+            <figure class="progressive-figure">
+              <video autoplay loop muted playsinline controls preload="auto">
+                <source
+                  src="{{ '/assets/videos/research/progressive-failure/Media1.mp4' | relative_url }}"
+                  type="video/mp4">
+              </video>
+              <figcaption>Stress contour.</figcaption>
+            </figure>
+
+          </div>
 
           <figure class="progressive-figure">
 
