@@ -865,81 +865,39 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
 
 .node-network{
   position:absolute;
-  inset:-125px;
+  inset:-145px;
   z-index:4;
   pointer-events:none;
   overflow:visible;
 }
 
-.mesh-svg{
+#hero-mesh-canvas{
   width:100%;
   height:100%;
+  display:block;
   overflow:visible;
-}
-
-.mesh-ring line{
-  stroke:rgba(40,215,255,.98);
-  stroke-width:2.15;
-  stroke-linecap:round;
-  opacity:.96;
+  opacity:.98;
   filter:
-    drop-shadow(0 0 4px rgba(40,215,255,.78))
-    drop-shadow(0 0 10px rgba(65,135,255,.42));
-  animation:meshLinePulse 2.5s ease-in-out infinite alternate;
+    drop-shadow(0 0 4px rgba(40,215,255,.60))
+    drop-shadow(0 0 12px rgba(65,135,255,.30));
 }
 
-.mesh-ring circle{
-  fill:#28d7ff;
-  opacity:1;
+html[data-theme="light"] #hero-mesh-canvas{
+  opacity:.88;
   filter:
-    drop-shadow(0 0 4px rgba(40,215,255,1))
-    drop-shadow(0 0 10px rgba(40,215,255,.70));
-  animation:meshNodePulse 2.1s ease-in-out infinite alternate;
-  transform-box:fill-box;
-  transform-origin:center;
-}
-
-@keyframes meshLinePulse{
-  from{opacity:.58}
-  to{opacity:1}
-}
-
-@keyframes meshNodePulse{
-  from{opacity:.72;transform:scale(.82)}
-  to{opacity:1;transform:scale(1.25)}
-}
-
-html[data-theme="light"] .mesh-ring line{
-  stroke:rgba(0,115,155,.92);
-  filter:
-    drop-shadow(0 0 3px rgba(0,115,155,.52))
-    drop-shadow(0 0 8px rgba(37,99,185,.25));
-}
-
-html[data-theme="light"] .mesh-ring circle{
-  fill:#007fa3;
-  filter:
-    drop-shadow(0 0 3px rgba(0,127,163,.75))
-    drop-shadow(0 0 8px rgba(37,99,185,.28));
+    drop-shadow(0 0 3px rgba(0,115,155,.38))
+    drop-shadow(0 0 8px rgba(37,99,185,.20));
 }
 
 @media(max-width:900px){
   .node-network{
-    inset:-62px;
-  }
-
-  .mesh-ring line{
-    stroke-width:1.65;
-  }
-
-  .mesh-ring circle{
-    opacity:.92;
+    inset:-78px;
   }
 }
 
 @media(max-width:640px){
   .node-network{
-    inset:-34px;
+    inset:-44px;
   }
 }
 
