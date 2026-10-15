@@ -1129,6 +1129,29 @@ html[data-theme="light"] .progressive-conclusion{
   box-shadow:var(--shadow) !important;
 }
 
+html[data-theme="light"] .timeline-content{
+  background:#fff !important;
+  border-color:rgba(15,37,58,.14) !important;
+  box-shadow:var(--shadow) !important;
+  color:var(--text) !important;
+}
+
+html[data-theme="light"] .timeline-content h3,
+html[data-theme="light"] .timeline-content h4,
+html[data-theme="light"] .timeline-content h5,
+html[data-theme="light"] .timeline-content p,
+html[data-theme="light"] .timeline-content li,
+html[data-theme="light"] .timeline-content .education-meta{
+  color:var(--text) !important;
+}
+
+html[data-theme="light"] .timeline-content p,
+html[data-theme="light"] .timeline-content li,
+html[data-theme="light"] .timeline-content .education-meta{
+  color:var(--muted) !important;
+}
+
+
 html[data-theme="light"] .project-card p,
 html[data-theme="light"] .project-card li,
 html[data-theme="light"] .experience-body p,
