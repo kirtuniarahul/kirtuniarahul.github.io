@@ -865,8 +865,8 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
 
 .node-network{
   position:absolute;
-  inset:-85px;
-  z-index:2;
+  inset:-125px;
+  z-index:4;
   pointer-events:none;
   overflow:visible;
 }
@@ -877,41 +877,69 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
   overflow:visible;
 }
 
-.mesh-svg line{
+.mesh-ring line{
   stroke:rgba(40,215,255,.98);
-  stroke-width:2.4;
+  stroke-width:2.15;
   stroke-linecap:round;
-  opacity:.98;
+  opacity:.96;
   filter:
-    drop-shadow(0 0 5px rgba(40,215,255,.80))
-    drop-shadow(0 0 12px rgba(40,215,255,.45));
+    drop-shadow(0 0 4px rgba(40,215,255,.78))
+    drop-shadow(0 0 10px rgba(65,135,255,.42));
+  animation:meshLinePulse 2.5s ease-in-out infinite alternate;
 }
 
-.mesh-svg circle{
+.mesh-ring circle{
   fill:#28d7ff;
   opacity:1;
   filter:
     drop-shadow(0 0 4px rgba(40,215,255,1))
-    drop-shadow(0 0 10px rgba(40,215,255,.65));
+    drop-shadow(0 0 10px rgba(40,215,255,.70));
+  animation:meshNodePulse 2.1s ease-in-out infinite alternate;
+  transform-box:fill-box;
+  transform-origin:center;
 }
 
-.mesh-svg line,
-.mesh-svg circle{
-  animation:meshPulse 2.3s ease-in-out infinite alternate;
-}
-
-@keyframes meshPulse{
-  from{opacity:.72}
+@keyframes meshLinePulse{
+  from{opacity:.58}
   to{opacity:1}
+}
+
+@keyframes meshNodePulse{
+  from{opacity:.72;transform:scale(.82)}
+  to{opacity:1;transform:scale(1.25)}
+}
+
+html[data-theme="light"] .mesh-ring line{
+  stroke:rgba(0,115,155,.92);
+  filter:
+    drop-shadow(0 0 3px rgba(0,115,155,.52))
+    drop-shadow(0 0 8px rgba(37,99,185,.25));
+}
+
+html[data-theme="light"] .mesh-ring circle{
+  fill:#007fa3;
+  filter:
+    drop-shadow(0 0 3px rgba(0,127,163,.75))
+    drop-shadow(0 0 8px rgba(37,99,185,.28));
 }
 
 @media(max-width:900px){
   .node-network{
-    inset:-35px;
+    inset:-62px;
   }
 
-  .mesh-svg line{
-    stroke-width:1.8;
+  .mesh-ring line{
+    stroke-width:1.65;
+  }
+
+  .mesh-ring circle{
+    opacity:.92;
+  }
+}
+
+@media(max-width:640px){
+  .node-network{
+    inset:-34px;
   }
 }
 
