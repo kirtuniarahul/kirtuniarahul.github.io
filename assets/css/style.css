@@ -853,155 +853,142 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
    ========================================= */
 
 .node-network {
-  position: absolute;
-  width: 520px;
-  height: 520px;
-  z-index: 1;
-  pointer-events: none;
+  position:absolute;
+  width:620px;
+  height:560px;
+  z-index:1;
+  pointer-events:none;
 }
-
 
 /* Individual nodes */
 
 .node {
-  position: absolute;
-
-  width: 10px;
-  height: 10px;
-
-  border-radius: 50%;
-
-  background: #28d7ff;
-
+  position:absolute;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#28d7ff;
   box-shadow:
     0 0 8px #28d7ff,
-    0 0 18px rgba(40, 215, 255, 0.8);
-
-  animation: nodePulse 2.6s ease-in-out infinite alternate;
+    0 0 18px rgba(40,215,255,0.8);
+  animation:nodePulse 2.6s ease-in-out infinite alternate;
 }
-
 
 @keyframes nodePulse {
   from {
-    transform: scale(0.8);
-    opacity: 0.65;
+    transform:scale(0.8);
+    opacity:0.65;
   }
-
   to {
-    transform: scale(1.35);
-    opacity: 1;
+    transform:scale(1.35);
+    opacity:1;
   }
 }
 
+/* 30 spread-out node positions */
 
-/* Node positions */
-
-.n1 {
-  top: 8%;
-  left: 25%;
-}
-
-.n2 {
-  top: 18%;
-  right: 10%;
-}
-
-.n3 {
-  top: 48%;
-  right: 2%;
-}
-
-.n4 {
-  bottom: 10%;
-  right: 22%;
-}
-
-.n5 {
-  bottom: 6%;
-  left: 20%;
-}
-
-.n6 {
-  top: 42%;
-  left: 2%;
-}
-
+.n1{top:5%;left:4%}
+.n2{top:5%;left:22%}
+.n3{top:5%;left:40%}
+.n4{top:5%;left:60%}
+.n5{top:5%;left:78%}
+.n6{top:5%;left:96%}
+.n7{top:27%;left:4%}
+.n8{top:27%;left:22%}
+.n9{top:27%;left:40%}
+.n10{top:27%;left:60%}
+.n11{top:27%;left:78%}
+.n12{top:27%;left:96%}
+.n13{top:50%;left:4%}
+.n14{top:50%;left:22%}
+.n15{top:50%;left:40%}
+.n16{top:50%;left:60%}
+.n17{top:50%;left:78%}
+.n18{top:50%;left:96%}
+.n19{top:73%;left:4%}
+.n20{top:73%;left:22%}
+.n21{top:73%;left:40%}
+.n22{top:73%;left:60%}
+.n23{top:73%;left:78%}
+.n24{top:73%;left:96%}
+.n25{top:95%;left:4%}
+.n26{top:95%;left:22%}
+.n27{top:95%;left:40%}
+.n28{top:95%;left:60%}
+.n29{top:95%;left:78%}
+.n30{top:95%;left:96%}
 
 /* =========================================
    CONNECTING LINES
    ========================================= */
 
 .connector {
-  position: absolute;
-
-  height: 1px;
-
-  background: linear-gradient(
+  position:absolute;
+  height:1px;
+  background:linear-gradient(
     90deg,
-    rgba(40, 215, 255, 0.05),
-    rgba(40, 215, 255, 0.65),
-    rgba(141, 92, 255, 0.35)
+    rgba(40,215,255,0.05),
+    rgba(40,215,255,0.65),
+    rgba(141,92,255,0.35)
   );
-
-  transform-origin: left center;
-
-  box-shadow:
-    0 0 5px rgba(40, 215, 255, 0.35);
-
-  opacity: 0.75;
-
-  animation: lineGlow 3s ease-in-out infinite alternate;
+  transform-origin:left center;
+  box-shadow:0 0 5px rgba(40,215,255,0.35);
+  opacity:0.75;
+  animation:lineGlow 3s ease-in-out infinite alternate;
 }
-
 
 @keyframes lineGlow {
   from {
-    opacity: 0.25;
+    opacity:0.25;
   }
-
   to {
-    opacity: 0.9;
+    opacity:0.9;
   }
 }
 
+/* 25 animated connections */
 
-/* Connector positions */
+.c1{width:111.6px;top:5%;left:4%;transform:rotate(0.0deg)}
+.c2{width:111.6px;top:5%;left:22%;transform:rotate(0.0deg)}
+.c3{width:124.0px;top:5%;left:40%;transform:rotate(0.0deg)}
+.c4{width:111.6px;top:5%;left:60%;transform:rotate(0.0deg)}
+.c5{width:111.6px;top:5%;left:78%;transform:rotate(0.0deg)}
+.c6{width:111.6px;top:95%;left:4%;transform:rotate(0.0deg)}
+.c7{width:111.6px;top:95%;left:22%;transform:rotate(0.0deg)}
+.c8{width:124.0px;top:95%;left:40%;transform:rotate(0.0deg)}
+.c9{width:111.6px;top:95%;left:60%;transform:rotate(0.0deg)}
+.c10{width:111.6px;top:95%;left:78%;transform:rotate(0.0deg)}
+.c11{width:123.2px;top:5%;left:4%;transform:rotate(90.0deg)}
+.c12{width:128.8px;top:27%;left:4%;transform:rotate(90.0deg)}
+.c13{width:128.8px;top:50%;left:4%;transform:rotate(90.0deg)}
+.c14{width:123.2px;top:73%;left:4%;transform:rotate(90.0deg)}
+.c15{width:123.2px;top:5%;left:96%;transform:rotate(90.0deg)}
+.c16{width:128.8px;top:27%;left:96%;transform:rotate(90.0deg)}
+.c17{width:128.8px;top:50%;left:96%;transform:rotate(90.0deg)}
+.c18{width:123.2px;top:73%;left:96%;transform:rotate(90.0deg)}
+.c19{width:123.2px;top:5%;left:22%;transform:rotate(90.0deg)}
+.c20{width:123.2px;top:5%;left:78%;transform:rotate(90.0deg)}
+.c21{width:123.2px;top:73%;left:22%;transform:rotate(90.0deg)}
+.c22{width:123.2px;top:73%;left:78%;transform:rotate(90.0deg)}
+.c23{width:170.4px;top:27%;left:4%;transform:rotate(49.1deg)}
+.c24{width:170.4px;top:27%;left:96%;transform:rotate(130.9deg)}
+.c25{width:166.2px;top:73%;left:4%;transform:rotate(47.8deg)}
 
-.c1 {
-  width: 230px;
-  top: 11%;
-  left: 26%;
-  transform: rotate(18deg);
+@media(max-width:900px){
+  .node-network{
+    width:500px;
+    height:460px;
+    transform:scale(.88);
+  }
 }
 
-.c2 {
-  width: 180px;
-  top: 21%;
-  right: 8%;
-  transform: rotate(72deg);
+@media(max-width:640px){
+  .node-network{
+    width:390px;
+    height:370px;
+    transform:scale(.82);
+  }
 }
-
-.c3 {
-  width: 220px;
-  top: 50%;
-  right: 0%;
-  transform: rotate(112deg);
-}
-
-.c4 {
-  width: 210px;
-  bottom: 12%;
-  right: 20%;
-  transform: rotate(165deg);
-}
-
-.c5 {
-  width: 230px;
-  bottom: 12%;
-  left: 18%;
-  transform: rotate(220deg);
-}
-
 
 /* =========================================
    DARK / LIGHT THEME SWITCH
