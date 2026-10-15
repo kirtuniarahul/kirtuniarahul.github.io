@@ -102,8 +102,7 @@
 (() => {
   const canvas = document.getElementById('hero-mesh-canvas');
   const host = document.querySelector('.node-network');
-  const photo = document.querySelector('.photo-frame');
-  if (!canvas || !host || !photo) return;
+  if (!canvas || !host) return;
 
   const ctx = canvas.getContext('2d', { alpha: true });
   let dpr = 1;
@@ -112,23 +111,11 @@
   let meshLayer = null;
   let phase = 0;
 
-  const cols = 121;
-  const rows = 121;
-
-  function roundedRectPath(context, x, y, w, h, r) {
-    const radius = Math.min(r, w / 2, h / 2);
-    context.beginPath();
-    context.moveTo(x + radius, y);
-    context.arcTo(x + w, y, x + w, y + h, radius);
-    context.arcTo(x + w, y + h, x, y + h, radius);
-    context.arcTo(x, y + h, x, y, radius);
-    context.arcTo(x, y, x + w, y, radius);
-    context.closePath();
-  }
+  const cols = 20;
+  const rows = 25; // exactly 500 nodes
 
   function buildMesh() {
     const rect = host.getBoundingClientRect();
-    const photoRect = photo.getBoundingClientRect();
 
     width = Math.max(1, rect.width);
     height = Math.max(1, rect.height);
@@ -147,23 +134,9 @@
     m.setTransform(dpr, 0, 0, dpr, 0, 0);
 
     const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-    const lineColor = isLight ? 'rgba(0,115,155,.42)' : 'rgba(40,215,255,.40)';
-    const nodeColor = isLight ? 'rgba(0,127,163,.82)' : 'rgba(40,215,255,.88)';
-    const lineGlow = isLight ? 'rgba(37,99,185,.16)' : 'rgba(65,135,255,.18)';
-
-    const px = photoRect.left - rect.left;
-    const py = photoRect.top - rect.top;
-    const pw = photoRect.width;
-    const ph = photoRect.height;
-    const margin = Math.max(18, Math.min(34, width * 0.035));
-
-    const cut = {
-      x: px - margin,
-      y: py - margin,
-      w: pw + margin * 2,
-      h: ph + margin * 2,
-      r: 34
-    };
+    const lineColor = isLight ? 'rgba(0,115,155,.48)' : 'rgba(40,215,255,.48)';
+    const nodeColor = isLight ? 'rgba(0,127,163,.90)' : 'rgba(40,215,255,.92)';
+    const lineGlow = isLight ? 'rgba(37,99,185,.18)' : 'rgba(65,135,255,.22)';
 
     const points = [];
     const sx = width / (cols - 1);
@@ -173,43 +146,38 @@
       const row = [];
       const stagger = (r % 2) * sx * 0.5;
       for (let col = 0; col < cols; col++) {
-        const x = col * sx + stagger;
+        const x = Math.min(width, col * sx + stagger);
         const y = r * sy;
-        row.push({
-          x: Math.min(width, x),
-          y
-        });
+        row.push({ x, y });
       }
       points.push(row);
     }
 
-    function insideCut(p) {
-      return p.x > cut.x && p.x < cut.x + cut.w &&
-             p.y > cut.y && p.y < cut.y + cut.h;
-    }
-
     function drawEdge(a, b) {
-      if (!a || !b || insideCut(a) || insideCut(b)) return;
+      if (!a || !b) return;
       m.moveTo(a.x, a.y);
       m.lineTo(b.x, b.y);
     }
 
     m.save();
-    m.lineWidth = 0.72;
+    m.lineWidth = 1.05;
     m.strokeStyle = lineColor;
-    m.shadowBlur = 3;
+    m.shadowBlur = 4;
     m.shadowColor = lineGlow;
     m.beginPath();
 
     for (let r = 0; r < rows; r++) {
       for (let col = 0; col < cols; col++) {
         const p = points[r][col];
-        if (insideCut(p)) continue;
-
         drawEdge(p, points[r][col + 1]);
+
         if (r + 1 < rows) {
           drawEdge(p, points[r + 1][col]);
           drawEdge(p, points[r + 1][col + (r % 2 === 0 ? 1 : -1)]);
+        }
+
+        if (r + 2 < rows && col % 3 === 0) {
+          drawEdge(p, points[r + 2][col]);
         }
       }
     }
@@ -219,29 +187,22 @@
 
     m.save();
     m.fillStyle = nodeColor;
-    m.shadowBlur = 3;
+    m.shadowBlur = 4;
     m.shadowColor = nodeColor;
 
-    let visibleNodes = 0;
+    let nodeCount = 0;
     for (let r = 0; r < rows; r++) {
       for (let col = 0; col < cols; col++) {
         const p = points[r][col];
-        if (insideCut(p)) continue;
-        visibleNodes++;
+        nodeCount++;
         m.beginPath();
-        m.arc(p.x, p.y, visibleNodes % 17 === 0 ? 1.25 : 0.72, 0, Math.PI * 2);
+        m.arc(p.x, p.y, nodeCount % 13 === 0 ? 1.9 : 1.25, 0, Math.PI * 2);
         m.fill();
       }
     }
     m.restore();
 
-    m.save();
-    m.globalCompositeOperation = 'destination-out';
-    roundedRectPath(m, cut.x, cut.y, cut.w, cut.h, cut.r);
-    m.fill();
-    m.restore();
-
-    canvas.dataset.meshNodes = String(visibleNodes);
+    canvas.dataset.meshNodes = String(nodeCount);
   }
 
   function animate() {
@@ -250,10 +211,10 @@
       return;
     }
 
-    phase += 0.018;
+    phase += 0.02;
     ctx.clearRect(0, 0, width, height);
 
-    const pulse = 0.82 + Math.sin(phase) * 0.13;
+    const pulse = 0.84 + Math.sin(phase) * 0.14;
     ctx.save();
     ctx.globalAlpha = pulse;
     ctx.drawImage(meshLayer, 0, 0, meshLayer.width, meshLayer.height, 0, 0, width, height);
