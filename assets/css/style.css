@@ -1001,3 +1001,236 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
   left: 18%;
   transform: rotate(220deg);
 }
+
+
+/* =========================================
+   DARK / LIGHT THEME SWITCH
+   ========================================= */
+
+.theme-toggle{
+  width:42px;
+  height:42px;
+  flex:0 0 42px;
+  display:flex;
+  overflow:hidden;
+  border:2px solid rgba(255,255,255,.38);
+  border-radius:50%;
+  background:transparent;
+  box-shadow:0 0 0 1px rgba(0,0,0,.22),0 8px 22px rgba(0,0,0,.20);
+}
+
+.theme-half{
+  appearance:none;
+  -webkit-appearance:none;
+  width:50%;
+  height:100%;
+  padding:0;
+  margin:0;
+  border:0;
+  cursor:pointer;
+  position:relative;
+}
+
+.theme-half-dark{background:#090b0e}
+.theme-half-light{background:#fff}
+
+.theme-half::after{
+  content:"";
+  position:absolute;
+  inset:4px 2px;
+  border-radius:999px;
+  opacity:0;
+  box-shadow:inset 0 0 0 2px var(--cyan);
+  transition:opacity .18s ease;
+}
+
+html[data-theme="dark"] .theme-half-dark::after,
+html[data-theme="light"] .theme-half-light::after{
+  opacity:1;
+}
+
+.theme-half:focus-visible{
+  outline:2px solid var(--cyan);
+  outline-offset:-2px;
+}
+
+html[data-theme="light"]{
+  --bg:#f5f8fc;
+  --bg2:#eef3f8;
+  --panel:#ffffff;
+  --panel2:#edf3f8;
+  --line:rgba(15,37,58,.14);
+  --text:#102235;
+  --muted:#5d7184;
+  --cyan:#007fa3;
+  --blue:#2563b9;
+  --violet:#6847c7;
+  --magenta:#b82a93;
+  --orange:#bd641f;
+  --green:#16845c;
+  --yellow:#9e7812;
+  --shadow:0 20px 55px rgba(38,57,77,.13);
+}
+
+html[data-theme="light"] body{
+  background:
+    radial-gradient(circle at 18% 10%,rgba(37,99,185,.10),transparent 28%),
+    radial-gradient(circle at 82% 18%,rgba(104,71,199,.09),transparent 30%),
+    linear-gradient(180deg,#f8fbfe,#f2f6fa 45%,#edf3f8);
+  color:var(--text);
+}
+
+html[data-theme="light"] body::before{
+  background-image:
+    linear-gradient(rgba(15,37,58,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(15,37,58,.035) 1px,transparent 1px);
+}
+
+html[data-theme="light"] #engineering-canvas{opacity:.13}
+
+html[data-theme="light"] .site-header{
+  background:rgba(250,252,255,.86);
+}
+
+html[data-theme="light"] .brand-mark{
+  color:#07111c;
+}
+
+html[data-theme="light"] .status-pill{
+  border-color:rgba(0,127,163,.22);
+  background:rgba(0,127,163,.07);
+  color:#15556a;
+}
+
+html[data-theme="light"] .hero-lead,
+html[data-theme="light"] .experience-body h4,
+html[data-theme="light"] .home-page-card p,
+html[data-theme="light"] .page-arrow{
+  color:#4f6477;
+}
+
+html[data-theme="light"] .hero-metrics strong{
+  color:var(--text);
+}
+
+html[data-theme="light"] .hero-metrics div,
+html[data-theme="light"] .skills-band div,
+html[data-theme="light"] .hero-link.secondary,
+html[data-theme="light"] .contact-buttons a{
+  background:rgba(255,255,255,.70);
+}
+
+html[data-theme="light"] .photo-frame{
+  box-shadow:0 26px 70px rgba(39,58,78,.20),0 0 42px rgba(65,135,255,.10);
+}
+
+html[data-theme="light"] .floating-chip{
+  background:rgba(255,255,255,.94);
+  color:#1a3145;
+}
+
+html[data-theme="light"] .page-hero{
+  background:
+    radial-gradient(circle at 15% 20%,rgba(0,127,163,.08),transparent 28%),
+    radial-gradient(circle at 85% 5%,rgba(104,71,199,.08),transparent 26%);
+}
+
+html[data-theme="light"] .home-page-card::before{
+  opacity:1;
+}
+
+html[data-theme="light"] .education-card::before{
+  background:
+    radial-gradient(circle at 80% 20%,rgba(0,127,163,.13),transparent 32%),
+    linear-gradient(135deg,#fafdff,#edf5f8);
+}
+html[data-theme="light"] .research-card::before{
+  background:
+    radial-gradient(circle at 80% 20%,rgba(104,71,199,.13),transparent 32%),
+    linear-gradient(135deg,#fbfaff,#f0eff8);
+}
+html[data-theme="light"] .experience-card-home::before{
+  background:
+    radial-gradient(circle at 80% 20%,rgba(22,132,92,.11),transparent 32%),
+    linear-gradient(135deg,#f8fcfa,#edf6f1);
+}
+html[data-theme="light"] .publications-card::before{
+  background:
+    radial-gradient(circle at 80% 20%,rgba(184,42,147,.10),transparent 32%),
+    linear-gradient(135deg,#fffafd,#f7eef5);
+}
+
+html[data-theme="light"] .project-card,
+html[data-theme="light"] .experience-card,
+html[data-theme="light"] .publication-card,
+html[data-theme="light"] .timeline-card,
+html[data-theme="light"] .failure-figure,
+html[data-theme="light"] .lshape-figure,
+html[data-theme="light"] .progressive-figure,
+html[data-theme="light"] .failure-conclusion,
+html[data-theme="light"] .lshape-conclusion,
+html[data-theme="light"] .progressive-conclusion{
+  background:#fff !important;
+  border-color:rgba(15,37,58,.14) !important;
+  box-shadow:var(--shadow) !important;
+}
+
+html[data-theme="light"] .project-card p,
+html[data-theme="light"] .project-card li,
+html[data-theme="light"] .experience-body p,
+html[data-theme="light"] .experience-body li,
+html[data-theme="light"] .publication-card p,
+html[data-theme="light"] .failure-copy p,
+html[data-theme="light"] .failure-copy li,
+html[data-theme="light"] .lshape-copy p,
+html[data-theme="light"] .lshape-copy li,
+html[data-theme="light"] .progressive-copy p,
+html[data-theme="light"] .progressive-copy li,
+html[data-theme="light"] .failure-conclusion li,
+html[data-theme="light"] .lshape-conclusion li,
+html[data-theme="light"] .progressive-conclusion li{
+  color:var(--muted) !important;
+}
+
+html[data-theme="light"] .failure-note,
+html[data-theme="light"] .lshape-note,
+html[data-theme="light"] .progressive-note{
+  color:#42596d !important;
+  background:rgba(0,127,163,.055) !important;
+}
+
+html[data-theme="light"] .failure-note.probability-note,
+html[data-theme="light"] .lshape-note.fatigue-note{
+  background:rgba(104,71,199,.055) !important;
+}
+
+html[data-theme="light"] .contact-strip{
+  background:linear-gradient(90deg,rgba(0,127,163,.045),rgba(104,71,199,.045),rgba(184,42,147,.035));
+}
+
+html[data-theme="light"] .site-footer{
+  background:#eaf0f5;
+}
+
+html[data-theme="light"] code{
+  background:#eef3f8;
+  color:#145a72;
+}
+
+html[data-theme="light"] .lshape-inline-video,
+html[data-theme="light"] .progressive-damage-video-row video,
+html[data-theme="light"] .progressive-media2 video,
+html[data-theme="light"] .lshape-video-crop{
+  background:#dfe7ee !important;
+}
+
+@media(max-width:640px){
+  .header-actions{
+    align-items:center;
+  }
+  .theme-toggle{
+    width:38px;
+    height:38px;
+    flex-basis:38px;
+  }
+}
