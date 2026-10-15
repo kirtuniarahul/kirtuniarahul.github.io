@@ -852,186 +852,69 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
    NODE NETWORK
    ========================================= */
 
-.node-network {
-  position: absolute;
-  width: 430px;
-  height: 430px;
-  z-index: 1;
-  pointer-events: none;
+.hero-visual{
+  position:relative;
+  overflow:visible;
+  isolation:isolate;
 }
 
-
-/* Individual nodes */
-
-.node {
-  position: absolute;
-
-  width: 13px;
-  height: 13px;
-
-  border-radius: 50%;
-
-  background: #28d7ff;
-
-  box-shadow:
-    0 0 10px #28d7ff,
-    0 0 24px rgba(40, 215, 255, 0.95),
-    0 0 38px rgba(65, 135, 255, 0.50);
-
-  animation: nodePulse 2.2s ease-in-out infinite alternate;
+.photo-frame{
+  position:relative;
+  z-index:3;
 }
 
+.node-network{
+  position:absolute;
+  inset:-55px;
+  z-index:2;
+  pointer-events:none;
+  overflow:visible;
+}
 
-@keyframes nodePulse {
-  from {
-    transform: scale(0.92);
-    opacity: 0.80;
+.mesh-svg{
+  width:100%;
+  height:100%;
+  overflow:visible;
+}
+
+.mesh-svg line{
+  stroke:rgba(40,215,255,.95);
+  stroke-width:2.1;
+  stroke-linecap:round;
+  filter:drop-shadow(0 0 6px rgba(40,215,255,.55));
+}
+
+.mesh-svg circle{
+  fill:#28d7ff;
+  filter:
+    drop-shadow(0 0 5px rgba(40,215,255,.95))
+    drop-shadow(0 0 14px rgba(40,215,255,.55));
+}
+
+.mesh-svg line,
+.mesh-svg circle{
+  animation:meshPulse 2.8s ease-in-out infinite alternate;
+}
+
+@keyframes meshPulse{
+  from{opacity:.70}
+  to{opacity:1}
+}
+
+@media(max-width:900px){
+  .node-network{
+    inset:-28px;
   }
 
-  to {
-    transform: scale(1.28);
-    opacity: 1;
-  }
-}
-
-
-/* Node positions — intentionally closer to read as a connected mesh */
-
-.n1 {
-  top: 13%;
-  left: 31%;
-}
-
-.n2 {
-  top: 20%;
-  right: 17%;
-}
-
-.n3 {
-  top: 47%;
-  right: 10%;
-}
-
-.n4 {
-  bottom: 15%;
-  right: 27%;
-}
-
-.n5 {
-  bottom: 12%;
-  left: 26%;
-}
-
-.n6 {
-  top: 44%;
-  left: 10%;
-}
-
-
-/* =========================================
-   CONNECTING LINES
-   ========================================= */
-
-.connector {
-  position: absolute;
-
-  height: 2px;
-
-  background: linear-gradient(
-    90deg,
-    rgba(40, 215, 255, 0.20),
-    rgba(40, 215, 255, 0.95),
-    rgba(141, 92, 255, 0.68)
-  );
-
-  transform-origin: left center;
-
-  box-shadow:
-    0 0 7px rgba(40, 215, 255, 0.65),
-    0 0 14px rgba(65, 135, 255, 0.34);
-
-  opacity: 0.92;
-
-  animation: lineGlow 2.6s ease-in-out infinite alternate;
-}
-
-
-@keyframes lineGlow {
-  from {
-    opacity: 0.58;
+  .mesh-svg line{
+    stroke-width:1.5;
   }
 
-  to {
-    opacity: 1;
+  .mesh-svg circle{
+    transform:scale(.9);
+    transform-origin:center;
   }
 }
-
-
-/* Connector positions — denser triangular web */
-
-.c1 {
-  width: 190px;
-  top: 16%;
-  left: 32%;
-  transform: rotate(14deg);
-}
-
-.c2 {
-  width: 125px;
-  top: 23%;
-  left: 76%;
-  transform: rotate(77deg);
-}
-
-.c3 {
-  width: 150px;
-  top: 49%;
-  left: 84%;
-  transform: rotate(112deg);
-}
-
-.c4 {
-  width: 155px;
-  top: 79%;
-  left: 70%;
-  transform: rotate(165deg);
-}
-
-.c5 {
-  width: 150px;
-  top: 83%;
-  left: 27%;
-  transform: rotate(219deg);
-}
-
-.c6 {
-  width: 145px;
-  top: 46%;
-  left: 11%;
-  transform: rotate(-66deg);
-}
-
-.c7 {
-  width: 210px;
-  top: 17%;
-  left: 32%;
-  transform: rotate(67deg);
-}
-
-.c8 {
-  width: 235px;
-  top: 47%;
-  left: 11%;
-  transform: rotate(8deg);
-}
-
-.c9 {
-  width: 215px;
-  top: 20%;
-  left: 79%;
-  transform: rotate(141deg);
-}
-
 
 /* =========================================
    DARK / LIGHT THEME SWITCH
