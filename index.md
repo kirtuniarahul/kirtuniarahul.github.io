@@ -65,24 +65,6 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
         <span class="node n10"></span>
         <span class="node n11"></span>
         <span class="node n12"></span>
-        <span class="node n13"></span>
-        <span class="node n14"></span>
-        <span class="node n15"></span>
-        <span class="node n16"></span>
-        <span class="node n17"></span>
-        <span class="node n18"></span>
-        <span class="node n19"></span>
-        <span class="node n20"></span>
-        <span class="node n21"></span>
-        <span class="node n22"></span>
-        <span class="node n23"></span>
-        <span class="node n24"></span>
-        <span class="node n25"></span>
-        <span class="node n26"></span>
-        <span class="node n27"></span>
-        <span class="node n28"></span>
-        <span class="node n29"></span>
-        <span class="node n30"></span>
 
         <span class="connector c1"></span>
         <span class="connector c2"></span>
@@ -94,21 +76,6 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
         <span class="connector c8"></span>
         <span class="connector c9"></span>
         <span class="connector c10"></span>
-        <span class="connector c11"></span>
-        <span class="connector c12"></span>
-        <span class="connector c13"></span>
-        <span class="connector c14"></span>
-        <span class="connector c15"></span>
-        <span class="connector c16"></span>
-        <span class="connector c17"></span>
-        <span class="connector c18"></span>
-        <span class="connector c19"></span>
-        <span class="connector c20"></span>
-        <span class="connector c21"></span>
-        <span class="connector c22"></span>
-        <span class="connector c23"></span>
-        <span class="connector c24"></span>
-        <span class="connector c25"></span>
       </div>
     
       <div class="photo-frame">
