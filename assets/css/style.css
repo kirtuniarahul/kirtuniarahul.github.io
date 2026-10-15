@@ -885,20 +885,20 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
   }
 }
 
-/* 12 irregularly distributed nodes */
+/* 12 randomly distributed nodes */
 
-.n1{top:12%;left:10%}
-.n2{top:5%;left:34%}
-.n3{top:11%;left:67%}
-.n4{top:24%;left:90%}
-.n5{top:46%;left:78%}
-.n6{top:69%;left:94%}
-.n7{top:91%;left:70%}
-.n8{top:82%;left:44%}
-.n9{top:94%;left:18%}
-.n10{top:68%;left:5%}
-.n11{top:42%;left:14%}
-.n12{top:29%;left:39%}
+.n1{top:14%;left:8%}
+.n2{top:7%;left:29%}
+.n3{top:13%;left:58%}
+.n4{top:20%;left:86%}
+.n5{top:38%;left:74%}
+.n6{top:58%;left:92%}
+.n7{top:84%;left:69%}
+.n8{top:77%;left:42%}
+.n9{top:89%;left:17%}
+.n10{top:63%;left:6%}
+.n11{top:37%;left:15%}
+.n12{top:26%;left:35%}
 
 /* =========================================
    CONNECTING LINES
@@ -930,16 +930,16 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
 
 /* 10 arbitrary animated connections */
 
-.c1{width:148.9px;top:12%;left:10%;transform:rotate(-14.7deg)}
-.c2{width:200.6px;top:5%;left:34%;transform:rotate(9.3deg)}
-.c3{width:154.8px;top:11%;left:67%;transform:rotate(27.0deg)}
-.c4{width:138.9px;top:24%;left:90%;transform:rotate(121.2deg)}
-.c5{width:157.0px;top:46%;left:78%;transform:rotate(52.3deg)}
-.c6{width:186.7px;top:69%;left:94%;transform:rotate(140.5deg)}
-.c7{width:163.4px;top:91%;left:70%;transform:rotate(-162.7deg)}
-.c8{width:168.9px;top:82%;left:44%;transform:rotate(157.4deg)}
-.c9{width:160.6px;top:94%;left:18%;transform:rotate(-119.1deg)}
-.c10{width:150.4px;top:68%;left:5%;transform:rotate(-69.0deg)}
+.c1{width:131.5px;top:14%;left:8%;transform:rotate(-16.7deg)}
+.c2{width:108.7px;top:7%;left:29%;transform:rotate(70.7deg)}
+.c3{width:154.8px;top:26%;left:35%;transform:rotate(-27deg)}
+.c4{width:165.7px;top:13%;left:58%;transform:rotate(54.6deg)}
+.c5{width:121px;top:20%;left:86%;transform:rotate(126.5deg)}
+.c6{width:250.2px;top:38%;left:74%;transform:rotate(96.9deg)}
+.c7{width:196.9px;top:58%;left:92%;transform:rotate(134.5deg)}
+.c8{width:278.6px;top:26%;left:35%;transform:rotate(81.3deg)}
+.c9{width:281.1px;top:37%;left:15%;transform:rotate(87.6deg)}
+.c10{width:150.4px;top:63%;left:6%;transform:rotate(-69deg)}
 
 @media(max-width:900px){
   .node-network{
