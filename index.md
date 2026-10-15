@@ -65,6 +65,10 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
         <span class="connector c3"></span>
         <span class="connector c4"></span>
         <span class="connector c5"></span>
+        <span class="connector c6"></span>
+        <span class="connector c7"></span>
+        <span class="connector c8"></span>
+        <span class="connector c9"></span>
       </div>
     
       <div class="photo-frame">
