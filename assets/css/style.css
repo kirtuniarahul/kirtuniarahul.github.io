@@ -854,8 +854,8 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
 
 .node-network {
   position:absolute;
-  width:620px;
-  height:560px;
+  width:600px;
+  height:540px;
   z-index:1;
   pointer-events:none;
 }
@@ -885,38 +885,20 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
   }
 }
 
-/* 30 spread-out node positions */
+/* 12 irregularly distributed nodes */
 
-.n1{top:5%;left:4%}
-.n2{top:5%;left:22%}
-.n3{top:5%;left:40%}
-.n4{top:5%;left:60%}
-.n5{top:5%;left:78%}
-.n6{top:5%;left:96%}
-.n7{top:27%;left:4%}
-.n8{top:27%;left:22%}
-.n9{top:27%;left:40%}
-.n10{top:27%;left:60%}
-.n11{top:27%;left:78%}
-.n12{top:27%;left:96%}
-.n13{top:50%;left:4%}
-.n14{top:50%;left:22%}
-.n15{top:50%;left:40%}
-.n16{top:50%;left:60%}
-.n17{top:50%;left:78%}
-.n18{top:50%;left:96%}
-.n19{top:73%;left:4%}
-.n20{top:73%;left:22%}
-.n21{top:73%;left:40%}
-.n22{top:73%;left:60%}
-.n23{top:73%;left:78%}
-.n24{top:73%;left:96%}
-.n25{top:95%;left:4%}
-.n26{top:95%;left:22%}
-.n27{top:95%;left:40%}
-.n28{top:95%;left:60%}
-.n29{top:95%;left:78%}
-.n30{top:95%;left:96%}
+.n1{top:12%;left:10%}
+.n2{top:5%;left:34%}
+.n3{top:11%;left:67%}
+.n4{top:24%;left:90%}
+.n5{top:46%;left:78%}
+.n6{top:69%;left:94%}
+.n7{top:91%;left:70%}
+.n8{top:82%;left:44%}
+.n9{top:94%;left:18%}
+.n10{top:68%;left:5%}
+.n11{top:42%;left:14%}
+.n12{top:29%;left:39%}
 
 /* =========================================
    CONNECTING LINES
@@ -946,47 +928,32 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
   }
 }
 
-/* 25 animated connections */
+/* 10 arbitrary animated connections */
 
-.c1{width:111.6px;top:5%;left:4%;transform:rotate(0.0deg)}
-.c2{width:111.6px;top:5%;left:22%;transform:rotate(0.0deg)}
-.c3{width:124.0px;top:5%;left:40%;transform:rotate(0.0deg)}
-.c4{width:111.6px;top:5%;left:60%;transform:rotate(0.0deg)}
-.c5{width:111.6px;top:5%;left:78%;transform:rotate(0.0deg)}
-.c6{width:111.6px;top:95%;left:4%;transform:rotate(0.0deg)}
-.c7{width:111.6px;top:95%;left:22%;transform:rotate(0.0deg)}
-.c8{width:124.0px;top:95%;left:40%;transform:rotate(0.0deg)}
-.c9{width:111.6px;top:95%;left:60%;transform:rotate(0.0deg)}
-.c10{width:111.6px;top:95%;left:78%;transform:rotate(0.0deg)}
-.c11{width:123.2px;top:5%;left:4%;transform:rotate(90.0deg)}
-.c12{width:128.8px;top:27%;left:4%;transform:rotate(90.0deg)}
-.c13{width:128.8px;top:50%;left:4%;transform:rotate(90.0deg)}
-.c14{width:123.2px;top:73%;left:4%;transform:rotate(90.0deg)}
-.c15{width:123.2px;top:5%;left:96%;transform:rotate(90.0deg)}
-.c16{width:128.8px;top:27%;left:96%;transform:rotate(90.0deg)}
-.c17{width:128.8px;top:50%;left:96%;transform:rotate(90.0deg)}
-.c18{width:123.2px;top:73%;left:96%;transform:rotate(90.0deg)}
-.c19{width:123.2px;top:5%;left:22%;transform:rotate(90.0deg)}
-.c20{width:123.2px;top:5%;left:78%;transform:rotate(90.0deg)}
-.c21{width:123.2px;top:73%;left:22%;transform:rotate(90.0deg)}
-.c22{width:123.2px;top:73%;left:78%;transform:rotate(90.0deg)}
-.c23{width:170.4px;top:27%;left:4%;transform:rotate(49.1deg)}
-.c24{width:170.4px;top:27%;left:96%;transform:rotate(130.9deg)}
-.c25{width:166.2px;top:73%;left:4%;transform:rotate(47.8deg)}
+.c1{width:148.9px;top:12%;left:10%;transform:rotate(-14.7deg)}
+.c2{width:200.6px;top:5%;left:34%;transform:rotate(9.3deg)}
+.c3{width:154.8px;top:11%;left:67%;transform:rotate(27.0deg)}
+.c4{width:138.9px;top:24%;left:90%;transform:rotate(121.2deg)}
+.c5{width:157.0px;top:46%;left:78%;transform:rotate(52.3deg)}
+.c6{width:186.7px;top:69%;left:94%;transform:rotate(140.5deg)}
+.c7{width:163.4px;top:91%;left:70%;transform:rotate(-162.7deg)}
+.c8{width:168.9px;top:82%;left:44%;transform:rotate(157.4deg)}
+.c9{width:160.6px;top:94%;left:18%;transform:rotate(-119.1deg)}
+.c10{width:150.4px;top:68%;left:5%;transform:rotate(-69.0deg)}
 
 @media(max-width:900px){
   .node-network{
     width:500px;
-    height:460px;
-    transform:scale(.88);
+    height:450px;
+    transform:scale(.90);
   }
 }
 
 @media(max-width:640px){
   .node-network{
     width:390px;
-    height:370px;
-    transform:scale(.82);
+    height:360px;
+    transform:scale(.84);
   }
 }
 
