@@ -53,22 +53,84 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
       <div class="fea-glow"></div>
     
       <div class="node-network">
-        <span class="node n1"></span>
-        <span class="node n2"></span>
-        <span class="node n3"></span>
-        <span class="node n4"></span>
-        <span class="node n5"></span>
-        <span class="node n6"></span>
-    
-        <span class="connector c1"></span>
-        <span class="connector c2"></span>
-        <span class="connector c3"></span>
-        <span class="connector c4"></span>
-        <span class="connector c5"></span>
-        <span class="connector c6"></span>
-        <span class="connector c7"></span>
-        <span class="connector c8"></span>
-        <span class="connector c9"></span>
+        <svg class="mesh-svg" viewBox="0 0 520 520" aria-hidden="true">
+          <line x1="110" y1="90" x2="180" y2="70" />
+          <line x1="180" y1="70" x2="260" y2="55" />
+          <line x1="260" y1="55" x2="340" y2="70" />
+          <line x1="340" y1="70" x2="410" y2="95" />
+          <line x1="90" y1="150" x2="160" y2="120" />
+          <line x1="160" y1="120" x2="210" y2="100" />
+          <line x1="310" y1="100" x2="360" y2="120" />
+          <line x1="360" y1="120" x2="430" y2="150" />
+          <line x1="70" y1="230" x2="130" y2="200" />
+          <line x1="130" y1="200" x2="170" y2="175" />
+          <line x1="350" y1="175" x2="390" y2="200" />
+          <line x1="390" y1="200" x2="450" y2="230" />
+          <line x1="70" y1="290" x2="130" y2="320" />
+          <line x1="130" y1="320" x2="170" y2="345" />
+          <line x1="350" y1="345" x2="390" y2="320" />
+          <line x1="390" y1="320" x2="450" y2="290" />
+          <line x1="90" y1="370" x2="160" y2="400" />
+          <line x1="160" y1="400" x2="210" y2="420" />
+          <line x1="310" y1="420" x2="360" y2="400" />
+          <line x1="360" y1="400" x2="430" y2="370" />
+          <line x1="110" y1="430" x2="180" y2="450" />
+          <line x1="180" y1="450" x2="260" y2="465" />
+          <line x1="260" y1="465" x2="340" y2="450" />
+          <line x1="340" y1="450" x2="410" y2="430" />
+          <line x1="110" y1="90" x2="160" y2="120" />
+          <line x1="180" y1="70" x2="210" y2="100" />
+          <line x1="340" y1="70" x2="310" y2="100" />
+          <line x1="410" y1="95" x2="360" y2="120" />
+          <line x1="90" y1="150" x2="130" y2="200" />
+          <line x1="160" y1="120" x2="170" y2="175" />
+          <line x1="360" y1="120" x2="350" y2="175" />
+          <line x1="430" y1="150" x2="390" y2="200" />
+          <line x1="130" y1="320" x2="170" y2="345" />
+          <line x1="390" y1="320" x2="350" y2="345" />
+          <line x1="90" y1="370" x2="130" y2="320" />
+          <line x1="160" y1="400" x2="170" y2="345" />
+          <line x1="360" y1="400" x2="350" y2="345" />
+          <line x1="430" y1="370" x2="390" y2="320" />
+          <line x1="110" y1="430" x2="160" y2="400" />
+          <line x1="180" y1="450" x2="210" y2="420" />
+          <line x1="340" y1="450" x2="310" y2="420" />
+          <line x1="410" y1="430" x2="360" y2="400" />
+          <circle cx="110" cy="90" r="5" />
+          <circle cx="180" cy="70" r="5" />
+          <circle cx="260" cy="55" r="5" />
+          <circle cx="340" cy="70" r="5" />
+          <circle cx="410" cy="95" r="5" />
+          <circle cx="90" cy="150" r="5" />
+          <circle cx="160" cy="120" r="5" />
+          <circle cx="210" cy="100" r="5" />
+          <circle cx="310" cy="100" r="5" />
+          <circle cx="360" cy="120" r="5" />
+          <circle cx="430" cy="150" r="5" />
+          <circle cx="70" cy="230" r="5" />
+          <circle cx="130" cy="200" r="5" />
+          <circle cx="170" cy="175" r="5" />
+          <circle cx="350" cy="175" r="5" />
+          <circle cx="390" cy="200" r="5" />
+          <circle cx="450" cy="230" r="5" />
+          <circle cx="70" cy="290" r="5" />
+          <circle cx="130" cy="320" r="5" />
+          <circle cx="170" cy="345" r="5" />
+          <circle cx="350" cy="345" r="5" />
+          <circle cx="390" cy="320" r="5" />
+          <circle cx="450" cy="290" r="5" />
+          <circle cx="90" cy="370" r="5" />
+          <circle cx="160" cy="400" r="5" />
+          <circle cx="210" cy="420" r="5" />
+          <circle cx="310" cy="420" r="5" />
+          <circle cx="360" cy="400" r="5" />
+          <circle cx="430" cy="370" r="5" />
+          <circle cx="110" cy="430" r="5" />
+          <circle cx="180" cy="450" r="5" />
+          <circle cx="260" cy="465" r="5" />
+          <circle cx="340" cy="450" r="5" />
+          <circle cx="410" cy="430" r="5" />
+        </svg>
       </div>
     
       <div class="photo-frame">
