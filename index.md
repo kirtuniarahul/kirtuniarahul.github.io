@@ -53,7 +53,18 @@ description: "Engineering portfolio of Kirtunia Rahul, Ph.D."
       <div class="fea-glow"></div>
     
       <div class="node-network">
-        <canvas id="hero-mesh-canvas" aria-hidden="true"></canvas>
+        <span class="node n1"></span>
+        <span class="node n2"></span>
+        <span class="node n3"></span>
+        <span class="node n4"></span>
+        <span class="node n5"></span>
+        <span class="node n6"></span>
+
+        <span class="connector c1"></span>
+        <span class="connector c2"></span>
+        <span class="connector c3"></span>
+        <span class="connector c4"></span>
+        <span class="connector c5"></span>
       </div>
     
       <div class="photo-frame">
