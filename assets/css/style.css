@@ -865,8 +865,8 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
 
 .node-network{
   position:absolute;
-  inset:-145px;
-  z-index:4;
+  inset:-115px;
+  z-index:1;
   pointer-events:none;
   overflow:visible;
 }
@@ -876,7 +876,7 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
   height:100%;
   display:block;
   overflow:visible;
-  opacity:.98;
+  opacity:.92;
   filter:
     drop-shadow(0 0 4px rgba(40,215,255,.60))
     drop-shadow(0 0 12px rgba(65,135,255,.30));
