@@ -852,54 +852,156 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
    NODE NETWORK
    ========================================= */
 
-.hero-visual{
-  position:relative;
-  overflow:visible;
-  isolation:isolate;
+.node-network {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  z-index: 1;
+  pointer-events: none;
 }
 
-.photo-frame{
-  position:relative;
-  z-index:3;
+
+/* Individual nodes */
+
+.node {
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #28d7ff;
+
+  box-shadow:
+    0 0 8px #28d7ff,
+    0 0 18px rgba(40, 215, 255, 0.8);
+
+  animation: nodePulse 2.6s ease-in-out infinite alternate;
 }
 
-.node-network{
-  position:absolute;
-  inset:-115px;
-  z-index:1;
-  pointer-events:none;
-  overflow:visible;
-}
 
-#hero-mesh-canvas{
-  width:100%;
-  height:100%;
-  display:block;
-  overflow:visible;
-  opacity:.92;
-  filter:
-    drop-shadow(0 0 4px rgba(40,215,255,.60))
-    drop-shadow(0 0 12px rgba(65,135,255,.30));
-}
+@keyframes nodePulse {
+  from {
+    transform: scale(0.8);
+    opacity: 0.65;
+  }
 
-html[data-theme="light"] #hero-mesh-canvas{
-  opacity:.88;
-  filter:
-    drop-shadow(0 0 3px rgba(0,115,155,.38))
-    drop-shadow(0 0 8px rgba(37,99,185,.20));
-}
-
-@media(max-width:900px){
-  .node-network{
-    inset:-78px;
+  to {
+    transform: scale(1.35);
+    opacity: 1;
   }
 }
 
-@media(max-width:640px){
-  .node-network{
-    inset:-44px;
+
+/* Node positions */
+
+.n1 {
+  top: 8%;
+  left: 25%;
+}
+
+.n2 {
+  top: 18%;
+  right: 10%;
+}
+
+.n3 {
+  top: 48%;
+  right: 2%;
+}
+
+.n4 {
+  bottom: 10%;
+  right: 22%;
+}
+
+.n5 {
+  bottom: 6%;
+  left: 20%;
+}
+
+.n6 {
+  top: 42%;
+  left: 2%;
+}
+
+
+/* =========================================
+   CONNECTING LINES
+   ========================================= */
+
+.connector {
+  position: absolute;
+
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(40, 215, 255, 0.05),
+    rgba(40, 215, 255, 0.65),
+    rgba(141, 92, 255, 0.35)
+  );
+
+  transform-origin: left center;
+
+  box-shadow:
+    0 0 5px rgba(40, 215, 255, 0.35);
+
+  opacity: 0.75;
+
+  animation: lineGlow 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes lineGlow {
+  from {
+    opacity: 0.25;
+  }
+
+  to {
+    opacity: 0.9;
   }
 }
+
+
+/* Connector positions */
+
+.c1 {
+  width: 230px;
+  top: 11%;
+  left: 26%;
+  transform: rotate(18deg);
+}
+
+.c2 {
+  width: 180px;
+  top: 21%;
+  right: 8%;
+  transform: rotate(72deg);
+}
+
+.c3 {
+  width: 220px;
+  top: 50%;
+  right: 0%;
+  transform: rotate(112deg);
+}
+
+.c4 {
+  width: 210px;
+  bottom: 12%;
+  right: 20%;
+  transform: rotate(165deg);
+}
+
+.c5 {
+  width: 230px;
+  bottom: 12%;
+  left: 18%;
+  transform: rotate(220deg);
+}
+
 
 /* =========================================
    DARK / LIGHT THEME SWITCH
