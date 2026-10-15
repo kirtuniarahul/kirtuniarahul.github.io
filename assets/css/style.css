@@ -865,7 +865,7 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
 
 .node-network{
   position:absolute;
-  inset:-55px;
+  inset:-85px;
   z-index:2;
   pointer-events:none;
   overflow:visible;
@@ -878,41 +878,40 @@ code{background:#0a1624;padding:2px 7px;border:1px solid var(--line);border-radi
 }
 
 .mesh-svg line{
-  stroke:rgba(40,215,255,.95);
-  stroke-width:2.1;
+  stroke:rgba(40,215,255,.98);
+  stroke-width:2.4;
   stroke-linecap:round;
-  filter:drop-shadow(0 0 6px rgba(40,215,255,.55));
+  opacity:.98;
+  filter:
+    drop-shadow(0 0 5px rgba(40,215,255,.80))
+    drop-shadow(0 0 12px rgba(40,215,255,.45));
 }
 
 .mesh-svg circle{
   fill:#28d7ff;
+  opacity:1;
   filter:
-    drop-shadow(0 0 5px rgba(40,215,255,.95))
-    drop-shadow(0 0 14px rgba(40,215,255,.55));
+    drop-shadow(0 0 4px rgba(40,215,255,1))
+    drop-shadow(0 0 10px rgba(40,215,255,.65));
 }
 
 .mesh-svg line,
 .mesh-svg circle{
-  animation:meshPulse 2.8s ease-in-out infinite alternate;
+  animation:meshPulse 2.3s ease-in-out infinite alternate;
 }
 
 @keyframes meshPulse{
-  from{opacity:.70}
+  from{opacity:.72}
   to{opacity:1}
 }
 
 @media(max-width:900px){
   .node-network{
-    inset:-28px;
+    inset:-35px;
   }
 
   .mesh-svg line{
-    stroke-width:1.5;
-  }
-
-  .mesh-svg circle{
-    transform:scale(.9);
-    transform-origin:center;
+    stroke-width:1.8;
   }
 }
 
