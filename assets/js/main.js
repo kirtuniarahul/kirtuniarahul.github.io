@@ -1,3 +1,30 @@
+
+(() => {
+  const root = document.documentElement;
+  const buttons = document.querySelectorAll('[data-theme-choice]');
+  const savedTheme = localStorage.getItem('portfolio-theme');
+  const initialTheme = savedTheme === 'light' ? 'light' : 'dark';
+
+  function applyTheme(theme) {
+    const nextTheme = theme === 'light' ? 'light' : 'dark';
+    root.setAttribute('data-theme', nextTheme);
+    localStorage.setItem('portfolio-theme', nextTheme);
+
+    buttons.forEach((button) => {
+      const active = button.dataset.themeChoice === nextTheme;
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+  }
+
+  applyTheme(initialTheme);
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();
+
 (() => {
   const canvas = document.getElementById('engineering-canvas');
   if (!canvas) return;
