@@ -51,6 +51,25 @@ description: "Professional experience of Kirtunia Rahul."
   border:1px solid rgba(255,255,255,.12);
 }
 
+.experience-logo-text{
+  width:230px;
+  height:230px;
+  display:grid;
+  place-items:center;
+  margin:0 auto;
+  padding:24px;
+  box-sizing:border-box;
+  border-radius:18px;
+  background:rgba(255,255,255,.96);
+  border:1px solid rgba(255,255,255,.12);
+  color:#102235;
+  font-size:1.8rem;
+  line-height:1.05;
+  font-weight:900;
+  letter-spacing:-.03em;
+  text-align:center;
+}
+
 @media(max-width:700px){
   .timeline-card{
     grid-template-columns:1fr;
@@ -61,7 +80,8 @@ description: "Professional experience of Kirtunia Rahul."
     width:100%;
   }
 
-  .experience-logo{
+  .experience-logo,
+  .experience-logo-text{
     width:200px;
     height:200px;
   }
@@ -83,13 +103,26 @@ description: "Professional experience of Kirtunia Rahul."
       <article class="timeline-card">
         <div class="timeline-year">
           Present
+          <div class="experience-logo-text" aria-label="GE Vernova">GE<br>Vernova</div>
+        </div>
+        <div class="timeline-content">
+          <span class="degree-badge">Wind Blade Structural Engineer</span>
+          <h3>GE Vernova</h3>
+          <h4>Greenville, South Carolina</h4>
+          <p class="education-meta">Nov 9, 2026–Present</p>
+        </div>
+      </article>
+
+      <article class="timeline-card">
+        <div class="timeline-year">
+          2026
           <img class="experience-logo" src="{{ '/assets/images/experience/latham.png' | relative_url }}" alt="Latham logo">
         </div>
         <div class="timeline-content">
           <span class="degree-badge">Senior Composite Structural Engineer</span>
           <h3>Latham</h3>
           <h4>Zephyrhills, Florida</h4>
-          <p class="education-meta">Jan 2026–Present</p>
+          <p class="education-meta">Jan 2026–Nov 6, 2026</p>
           <ul>
             <li>Supported multiple new product launches through FEA-based structural stress and failure analysis and load case development for manufacturing validation of composite structures under service, transportation, and extreme loading conditions.</li>
             <li>Performed design iterations and structural assessments to evaluate stress, deformation, failure risk, laminate configuration, and reinforcement requirements while balancing structural performance, manufacturability, and cost.</li>
