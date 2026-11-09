@@ -51,24 +51,11 @@ description: "Professional experience of Kirtunia Rahul."
   border:1px solid rgba(255,255,255,.12);
 }
 
-.experience-logo-text{
-  width:230px;
-  height:230px;
-  display:grid;
-  place-items:center;
-  margin:0 auto;
-  padding:24px;
-  box-sizing:border-box;
-  border-radius:18px;
-  background:rgba(255,255,255,.96);
-  border:1px solid rgba(255,255,255,.12);
-  color:#102235;
-  font-size:1.8rem;
-  line-height:1.05;
-  font-weight:900;
-  letter-spacing:-.03em;
-  text-align:center;
+.ge-vernova-logo{
+  object-fit:contain;
+  padding:18px;
 }
+
 
 @media(max-width:700px){
   .timeline-card{
@@ -80,8 +67,7 @@ description: "Professional experience of Kirtunia Rahul."
     width:100%;
   }
 
-  .experience-logo,
-  .experience-logo-text{
+  .experience-logo{
     width:200px;
     height:200px;
   }
@@ -103,7 +89,7 @@ description: "Professional experience of Kirtunia Rahul."
       <article class="timeline-card">
         <div class="timeline-year">
           Present
-          <div class="experience-logo-text" aria-label="GE Vernova">GE<br>Vernova</div>
+          <img class="experience-logo ge-vernova-logo" src="https://www.gevernova.com/themes/custom/ge_vernova_unified/logo.svg" alt="GE Vernova logo">
         </div>
         <div class="timeline-content">
           <span class="degree-badge">Wind Blade Structural Engineer</span>
